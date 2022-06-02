@@ -1,0 +1,1704 @@
+;Count;N_variants;variants
+sports;853;1;{'sport': 853}
+are;719;8;{'is': 696, 'have': 13, 'more': 3, 'became': 2, 'exist': 2, 'situated': 1, 'live': 1, 'get': 1}
+than;548;4;{'then': 371, 'that': 174, 'except': 2, 'well': 1}
+these;545;3;{'this': 535, 'those': 6, 'that': 4}
+number;468;15;{'amount': 372, 'quantity': 64, 'level': 7, 'part': 5, 'member': 4, 'value': 4, 'count': 3, 'rate': 2, 'quality': 1, 'mount': 1, 'population': 1, 'proportion': 1, 'portion': 1, 'category': 1, 'mark': 1}
+to;369;6;{'for': 332, 'till': 29, 'do': 5, 'ourselves': 1, 'nearby': 1, 'caused': 1}
+were;365;6;{'was': 354, 'had': 6, 'became': 2, 'observe': 1, 'lead': 1, 'occupied': 1}
+them;362;3;{'it': 335, 'him': 20, 'then': 7}
+that;292;12;{'it': 74, 'this': 49, 'than': 43, 'what': 43, 'which': 33, 'the': 24, 'who': 11, 'when': 5, 'about': 5, 'such': 2, 'their': 2, 'so': 1}
+other;233;10;{'another': 121, 'others': 79, 'over': 22, 'different': 3, 'rather': 2, 'alternative': 2, 'unlike': 1, 'often': 1, 'previous': 1, 'offer': 1}
+for;195;6;{'in': 130, 'by': 51, 'about': 10, 'or': 2, 'within': 1, 'both': 1}
+which;195;5;{'what': 108, 'that': 67, 'who': 10, 'it': 9, 'because': 1}
+people;170;18;{'persons': 57, 'person': 51, 'ones': 14, 'humans': 11, 'human': 10, 'you': 4, 'men': 4, 'population': 4, 'them': 3, 'individuals': 3, 'users': 2, 'adults': 1, 'workers': 1, 'citizens': 1, 'generation': 1, 'public': 1, 'personalities': 1, 'humanity': 1}
+their;153;6;{'the': 73, 'there': 54, 'your': 15, 'them': 6, 'our': 4, 'usual': 1}
+fewer;142;2;{'less': 141, 'lower': 1}
+in;136;6;{'for': 89, 'is': 22, 'it': 16, 'and': 6, 'onto': 2, 'he': 1}
+percentage;133;16;{'percent': 78, 'number': 18, 'amount': 15, 'quantity': 7, 'part': 3, 'point': 2, 'proportion': 1, 'degree': 1, 'date': 1, 'level': 1, 'data': 1, 'line': 1, 'growth': 1, 'portion': 1, 'rate': 1, 'volume': 1}
+economic;109;1;{'economical': 109}
+then;105;6;{'than': 90, 'after': 8, 'when': 3, 'that': 2, 'next': 1, 'now': 1}
+by;105;1;{'for': 105}
+have;93;22;{'make': 28, 'cause': 12, 'be': 8, 'are': 7, 'bring': 6, 'share': 4, 'is': 4, 'provide': 4, 'take': 3, 'means': 2, 'feel': 2, 'face': 2, 'get': 2, 'will': 1, 'causes': 1, 'move': 1, 'used': 1, 'leave': 1, 'house': 1, 'collect': 1, 'image': 1, 'project': 1}
+do;85;12;{'make': 47, 'are': 19, 'have': 5, 'should': 3, 'practice': 2, 'perform': 2, 'has': 2, 'deal': 1, 'exercise': 1, 'give': 1, 'gave': 1, 'were': 1}
+the;84;10;{'that': 20, 'to': 16, 'this': 16, 'all': 9, 'those': 5, 'their': 5, 'about': 5, 'than': 4, 'own': 2, 'what': 2}
+and;81;9;{'or': 23, 'to': 23, 'a': 17, 'that': 8, 'on': 3, 'because': 2, 'however': 2, '-': 2, 'while': 1}
+there;81;2;{'it': 70, 'here': 11}
+proportion;80;11;{'part': 42, 'number': 14, 'amount': 11, 'percentage': 4, 'rate': 2, 'level': 2, 'proposition': 1, 'place': 1, 'population': 1, 'quantity': 1, 'percentages': 1}
+many;78;4;{'much': 69, 'more': 7, 'most': 1, 'such': 1}
+into;78;1;{'in': 78}
+or;78;3;{'of': 52, 'and': 25, 'if': 1}
+it;73;3;{'this': 45, 'there': 20, 'if': 8}
+with;73;5;{'by': 52, 'from': 13, 'and': 4, 'is': 2, 'making': 2}
+as;73;7;{'like': 40, 'than': 19, 'while': 5, 'the': 3, 'us': 3, 'for': 2, 'such': 1}
+lose;70;2;{'loose': 69, 'last': 1}
+At;69;1;{'In': 69}
+make;66;11;{'do': 47, 'have': 8, 'take': 2, 'maintain': 2, 'contain': 1, 'takes': 1, 'state': 1, 'more': 1, 'quake': 1, 'right': 1, 'meet': 1}
+higher;66;4;{'bigger': 39, 'more': 19, 'high': 7, 'upper': 1}
+obesity;65;1;{'overweight': 65}
+peak;64;5;{'pick': 59, 'high': 2, 'hit': 1, 'boom': 1, 'valley': 1}
+respectively;63;6;{'accordingly': 37, 'relatively': 15, 'correspondingly': 7, 'consequently': 2, 'particularly': 1, 'adequately': 1}
+This;60;5;{'It': 42, 'These': 12, 'Which': 3, 'There': 2, 'that': 1}
+advertising;59;1;{'advertisement': 59}
+older;59;9;{'elder': 33, 'old': 9, 'elderly': 7, 'more': 4, 'above': 2, 'alter': 1, 'bigger': 1, 'over': 1, 'aged': 1}
+has;58;16;{'is': 27, 'was': 13, 'gives': 3, 'cause': 2, 'takes': 2, 'causes': 1, 'whereas': 1, 'continued': 1, 'call': 1, 'connects': 1, 'show': 1, 'here': 1, 'want': 1, 'reveal': 1, 'would': 1, 'ensues': 1}
+among;57;4;{'between': 51, 'from': 3, 'at': 2, 'amount': 1}
+between;54;2;{'in': 32, 'among': 22}
+who;54;1;{'which': 54}
+hand;52;1;{'side': 52}
+men;50;3;{'males': 25, 'male': 24, 'makes': 1}
+this;47;6;{'such': 21, 'that': 19, 'there': 3, 'its': 2, 'their': 1, 'own': 1}
+economy;46;3;{'economics': 25, 'economic': 19, 'Economy': 2}
+amount;44;9;{'number': 27, 'quantity': 9, 'numbers': 2, 'figures': 1, 'statistic': 1, 'points': 1, 'among': 1, 'lake': 1, 'volume': 1}
+large;44;4;{'big': 39, 'high': 3, 'dramatic': 1, 'grate': 1}
+is;44;17;{'has': 12, 'have': 7, 'takes': 4, 'makes': 3, 'of': 3, 'a': 3, 'involves': 2, 'arises': 1, 'fall': 1, 'means': 1, 'seems': 1, 'remains': 1, 'by': 1, 'account': 1, 'illustrates': 1, 'stays': 1, 'discuss': 1}
+elderly;43;4;{'elder': 22, 'old': 14, 'pensioners': 4, 'aged': 3}
+whole;42;3;{'all': 26, 'hole': 15, 'other': 1}
+when;41;6;{'then': 18, 'where': 16, 'while': 4, 'of': 1, 'if': 1, 'that': 1}
+like;41;3;{'as': 36, 'prefer': 3, 'love': 2}
+printed;41;1;{'print': 41}
+get;40;17;{'take': 11, 'become': 7, 'have': 4, 'be': 3, 'gain': 2, 'became': 2, 'give': 1, 'observe': 1, 'turn': 1, 'see': 1, 'had': 1, 'bit': 1, 'face': 1, 'try': 1, 'use': 1, 'are': 1, 'make': 1}
+seen;39;5;{'noticed': 27, 'seem': 7, 'watched': 2, 'observed': 2, 'seems': 1}
+women;39;2;{'female': 25, 'females': 14}
+level;39;11;{'number': 13, 'amount': 13, 'quantity': 2, 'position': 2, 'percent': 2, 'life': 2, 'high': 1, 'point': 1, 'percentage': 1, 'degree': 1, 'value': 1}
+from;39;2;{'since': 37, 'during': 2}
+another;39;1;{'other': 39}
+work;37;4;{'working': 23, 'job': 12, 'be': 1, 'production': 1}
+too;37;3;{'to': 33, 'so': 2, 'also': 2}
+doing;36;3;{'do': 27, 'making': 7, 'for': 2}
+think;36;4;{'suppose': 24, 'consider': 10, 'come': 1, 'dream': 1}
+they;36;4;{'he': 29, 'you': 5, 'if': 1, 'temperatures': 1}
+raise;35;4;{'rise': 31, 'grow': 2, 'improve': 1, 'force': 1}
+lowest;35;4;{'least': 25, 'smallest': 8, 'minimized': 1, 'bottom': 1}
+outweigh;35;2;{'overweight': 34, 'overcome': 1}
+no;34;1;{'not': 34}
+life;34;6;{'live': 22, 'living': 8, 'time': 1, 'timetable': 1, 'layer': 1, 'lifetime': 1}
+so;34;5;{'thus': 13, 'such': 9, 'that': 8, 'too': 3, 'quiet': 1}
+decrease;34;7;{'decreasing': 22, 'fall': 3, 'increase': 3, 'decline': 2, 'reduce': 2, 'dropping': 1, 'falling': 1}
+lower;33;5;{'less': 22, 'smaller': 7, 'fewer': 2, 'prevent': 1, 'decline': 1}
+note;32;4;{'notice': 27, 'admit': 3, 'spot': 1, 'tell': 1}
+obvious;32;3;{'obviously': 20, 'evident': 11, 'vivid': 1}
+small;32;3;{'little': 29, 'low': 2, 'short': 1}
+It;30;2;{'That': 16, 'This': 14}
+children;29;2;{'kids': 27, 'kinder': 2}
+different;28;11;{'various': 10, 'another': 4, 'other': 3, 'else': 2, 'difficult': 2, 'distinctive': 2, 'opposite': 1, 'series': 1, 'distinct': 1, 'others': 1, 'particular': 1}
+where;28;4;{'when': 12, 'there': 11, 'that': 4, 'very': 1}
+Germany;28;1;{'German': 28}
+rise;28;3;{'raise': 26, 'increase': 1, 'climb': 1}
+However;28;1;{'Although': 28}
+technologies;28;2;{'technology': 27, 'Technology': 1}
+achieve;27;4;{'reach': 24, 'get': 1, 'express': 1, 'invent': 1}
+does;27;3;{'is': 22, 'makes': 3, 'would': 2}
+growth;27;4;{'grow': 24, 'spreading': 1, 'promotion': 1, 'rising': 1}
+healthy;27;1;{'health': 27}
+greater;27;1;{'bigger': 27}
+numbers;27;9;{'amount': 17, 'quantities': 3, 'index': 1, 'points': 1, 'amounts': 1, 'measure': 1, 'variable': 1, 'dates': 1, 'persons': 1}
+various;26;3;{'different': 22, 'several': 3, 'own': 1}
+was;26;7;{'had': 17, 'became': 2, 'stayed': 2, 'consist': 2, 'started': 1, 'with': 1, 'made': 1}
+increase;26;10;{'rise': 7, 'grow': 5, 'raise': 3, 'improve': 3, 'growth': 2, 'climb': 2, 'high': 1, 'incline': 1, 'crease': 1, 'attract': 1}
+world;26;4;{'word': 22, 'words': 2, 'globe': 1, 'state': 1}
+quite;25;2;{'quiet': 24, 'rather': 1}
+had;25;10;{'was': 11, 'were': 4, 'is': 3, 'kept': 1, 'compare': 1, 'as': 1, 'counted': 1, 'are': 1, 'contained': 1, 'illustrated': 1}
+all;24;3;{'any': 9, 'whole': 9, 'every': 6}
+because;23;3;{'cause': 19, 'as': 3, 'so': 1}
+means;23;7;{'way': 12, 'ways': 5, 'meanings': 2, 'tools': 1, 'says': 1, 'remedy': 1, 'reminds': 1}
+did;23;3;{'made': 11, 'had': 10, 'took': 2}
+cause;23;6;{'make': 14, 'reason': 5, 'subsequence': 1, 'be': 1, 'deliver': 1, 'option': 1}
+important;23;9;{'significant': 13, 'essential': 2, 'appropriate': 2, 'obvious': 1, 'prominent': 1, 'main': 1, 'actual': 1, 'big': 1, 'matter': 1}
+rose;22;1;{'raised': 22}
+low;21;5;{'small': 7, 'law': 6, 'less': 3, 'little': 3, 'tiny': 2}
+more;21;5;{'much': 7, 'higher': 6, 'bigger': 5, 'over': 2, 'better': 1}
+reduce;21;9;{'decline': 7, 'decrease': 7, 'lessen': 1, 'narrow': 1, 'make': 1, 'cut': 1, 'solve': 1, 'improve': 1, 'increase': 1}
+be;21;7;{'have': 7, 'get': 4, 'do': 4, 'make': 3, 'give': 1, 'talk': 1, 'feel': 1}
+smaller;21;4;{'less': 14, 'lower': 4, 'fewer': 2, 'shorter': 1}
+every;21;3;{'each': 19, 'ever': 1, 'everything': 1}
+affect;21;5;{'effect': 12, 'influence': 4, 'decrease': 3, 'deteriorate': 1, 'deter': 1}
+while;20;2;{'when': 18, 'where': 2}
+throughout;20;3;{'through': 15, 'in': 3, 'throw': 2}
+some;20;7;{'someone': 6, 'same': 5, 'something': 4, 'special': 2, 'sound': 1, 'one': 1, 'various': 1}
+can;19;2;{'may': 18, 'have': 1}
+spent;19;5;{'of': 13, 'had': 3, 'by': 1, 'sport': 1, 'for': 1}
+product;19;1;{'good': 19}
+job;18;2;{'work': 17, 'occupation': 1}
+should;18;2;{'must': 16, 'are': 2}
+use;18;6;{'usage': 11, 'enter': 3, 'sell': 1, 'expansion': 1, 'influence': 1, 'drink': 1}
+Secondly;18;2;{'Secondary': 11, 'Second': 7}
+using;18;6;{'use': 13, 'consumed': 1, 'gaming': 1, 'telling': 1, 'consuming': 1, 'by': 1}
+over;17;4;{'during': 9, 'other': 4, 'more': 3, 'cross': 1}
+what;17;2;{'that': 9, 'which': 8}
+reasons;17;5;{'causes': 10, 'points': 4, 'explanation': 1, 'goals': 1, 'ideas': 1}
+problems;16;5;{'troubles': 12, 'diseases': 1, 'futures': 1, 'illnesses': 1, 'obstacles': 1}
+reached;16;10;{'achieved': 5, 'gained': 2, 'became': 2, 'leveled': 1, 'had': 1, 'took': 1, 'formed': 1, 'takes': 1, 'researched': 1, 'hit': 1}
+become;16;4;{'be': 8, 'get': 6, 'being': 1, 'gain': 1}
+noted;16;3;{'noticed': 14, 'fixated': 1, 'fixed': 1}
+network;16;2;{'net': 15, 'site': 1}
+health;16;4;{'healthy': 13, 'body': 1, 'feelings': 1, 'organism': 1}
+commit;16;2;{'make': 11, 'do': 5}
+countries;16;7;{'states': 7, 'ones': 3, 'places': 2, 'nationalities': 1, 'capital': 1, 'children': 1, 'continents': 1}
+highest;15;4;{'biggest': 8, 'most': 5, 'greatest': 1, 'largest': 1}
+unemployed;15;1;{'unemployment': 15}
+necessary;15;7;{'needed': 9, 'crucial': 1, 'appropriate': 1, 'different': 1, 'obligatory': 1, 'enough': 1, 'obvious': 1}
+see;15;8;{'find': 4, 'admit': 4, 'say': 2, 'watch': 1, 'face': 1, 'observe': 1, 'conduct': 1, 'makes': 1}
+percent;15;6;{'percentage': 5, 'percentages': 3, 'number': 3, 'point': 2, 'recent': 1, 'points': 1}
+big;15;5;{'large': 8, 'high': 3, 'loud': 2, 'whole': 1, 'more': 1}
+but;15;3;{'however': 12, 'than': 2, 'while': 1}
+smallest;15;3;{'least': 13, 'lest': 1, 'lowest': 1}
+increased;14;7;{'raised': 7, 'rocketed': 2, 'growing': 1, 'soared': 1, 'developed': 1, 'extend': 1, 'grow': 1}
+themselves;14;2;{'yourself': 9, 'itself': 5}
+great;14;3;{'big': 8, 'high': 3, 'large': 3}
+provide;14;8;{'give': 5, 'get': 2, 'refuse': 2, 'open': 1, 'improve': 1, 'bring': 1, 'earn': 1, 'have': 1}
+create;14;4;{'make': 10, 'bring': 2, 'do': 1, 'cause': 1}
+field;14;2;{'sphere': 13, 'destination': 1}
+produce;14;6;{'product': 7, 'make': 2, 'purchase': 2, 'products': 1, 'cover': 1, 'explode': 1}
+loss;14;3;{'lost': 7, 'lose': 6, 'pity': 1}
+everything;13;2;{'all': 12, 'simple': 1}
+decreased;13;6;{'reduced': 8, 'considered': 1, 'collapsed': 1, 'millions': 1, 'turn': 1, 'declined': 1}
+any;13;3;{'some': 11, 'whatever': 1, 'various': 1}
+solve;13;6;{'decide': 8, 'help': 1, 'reduce': 1, 'decrease': 1, 'cope': 1, 'sold': 1}
+go;13;5;{'come': 6, 'do': 4, 'stay': 1, 'run': 1, 'fall': 1}
+whereas;13;2;{'when': 9, 'where': 4}
+slight;13;4;{'little': 10, 'sharp': 1, 'soft': 1, 'light': 1}
+opportunity;13;3;{'possibility': 8, 'ability': 4, 'chance': 1}
+opportunities;13;4;{'possibilities': 10, 'possibility': 1, 'capabilities': 1, 'places': 1}
+developing;13;2;{'poorer': 12, 'undeveloped': 1}
+say;12;3;{'tell': 10, 'think': 1, 'mention': 1}
+bigger;12;4;{'more': 9, 'huge': 1, 'longer': 1, 'larger': 1}
+of;12;3;{'a': 7, 'over': 4, 'including': 1}
+figure;12;9;{'number': 3, 'quantity': 2, 'amount': 1, 'level': 1, 'example': 1, 'table': 1, 'data': 1, 'index': 1, 'statistic': 1}
+There;12;1;{'It': 12}
+gender;12;5;{'sex': 7, 'sexes': 2, 'category': 1, 'ages': 1, 'population': 1}
+take;12;7;{'make': 4, 'drink': 2, 'have': 2, 'go': 1, 'share': 1, 'get': 1, 'move': 1}
+largest;12;3;{'biggest': 5, 'most': 5, 'highest': 2}
+data;12;3;{'date': 9, 'marks': 2, 'dates': 1}
+employees;12;3;{'employers': 7, 'workers': 3, 'personal': 2}
+an;12;1;{'and': 12}
+talk;12;3;{'say': 9, 'tell': 2, 'discuss': 1}
+showed;12;7;{'experienced': 5, 'was': 2, 'started': 1, 'followed': 1, 'see': 1, 'had': 1, 'saw': 1}
+effect;12;1;{'affect': 12}
+improve;12;8;{'better': 3, 'develop': 2, 'rise': 2, 'boost': 1, 'increase': 1, 'grow': 1, 'get': 1, 'improvement': 1}
+two;12;2;{'to': 8, 'different': 4}
+reach;12;5;{'rich': 4, 'get': 4, 'have': 2, 'make': 1, 'come': 1}
+mode;12;1;{'way': 12}
+export;11;1;{'import': 11}
+indices;11;1;{'indexes': 11}
+rich;11;1;{'reach': 11}
+developed;11;4;{'developing': 8, 'increased': 1, 'sustained': 1, 'great': 1}
+average;11;6;{'middle': 5, 'medium': 2, 'median': 1, 'total': 1, 'warm': 1, 'common': 1}
+ordinary;11;2;{'simple': 6, 'common': 5}
+high;11;4;{'big': 7, 'expensive': 2, 'many': 1, 'enormous': 1}
+transport;11;7;{'transportation': 4, 'travels': 2, 'commuting': 1, 'travelling': 1, 'replace': 1, 'move': 1, 'take': 1}
+biggest;11;4;{'most': 6, 'highest': 3, 'main': 1, 'best': 1}
+learn;11;1;{'know': 11}
+environment;11;4;{'nature': 8, 'climate': 1, 'perspective': 1, 'ecology': 1}
+reason;11;4;{'cause': 7, 'factor': 2, 'idea': 1, 'difference': 1}
+figures;11;10;{'graphs': 2, 'meanings': 1, 'amount': 1, 'data': 1, 'ratios': 1, 'charts': 1, 'numbers': 1, 'trend': 1, 'features': 1, 'indexes': 1}
+show;11;7;{'have': 4, 'saw': 2, 'describe': 1, 'says': 1, 'stays': 1, 'share': 1, 'see': 1}
+afford;11;1;{'allow': 11}
+little;10;4;{'few': 4, 'small': 3, 'bit': 2, 'low': 1}
+lead;10;6;{'prevent': 3, 'bring': 2, 'leave': 2, 'provide': 1, 'result': 1, 'cause': 1}
+aged;10;5;{'of': 4, 'in': 3, 'by': 1, 'old': 1, 'among': 1}
+might;10;1;{'may': 10}
+through;10;2;{'though': 7, 'in': 3}
+transportation;10;5;{'transport': 5, 'deliveries': 2, 'carriage': 1, 'distribution': 1, 'rake': 1}
+value;10;5;{'meaning': 3, 'number': 2, 'mark': 2, 'figure': 2, 'understand': 1}
+percentages;10;4;{'percent': 7, 'trends': 1, 'average': 1, 'values': 1}
+larger;10;3;{'more': 4, 'higher': 3, 'bigger': 3}
+believe;10;4;{'consider': 7, 'reckon': 1, 'assume': 1, 'hope': 1}
+safe;10;3;{'safety': 8, 'possible': 1, 'sedate': 1}
+draw;10;3;{'make': 8, 'paint': 1, 'gives': 1}
+shows;10;8;{'gives': 3, 'means': 1, 'demonstrates': 1, 'represent': 1, 'illustrates': 1, 'is': 1, 'pictures': 1, 'see': 1}
+usage;10;2;{'using': 9, 'spending': 1}
+share;10;4;{'number': 6, 'population': 2, 'position': 1, 'exchange': 1}
+basis;10;3;{'base': 8, 'school': 1, 'foundation': 1}
+waste;10;2;{'waist': 9, 'costs': 1}
+rate;10;8;{'amount': 2, 'data': 2, 'raise': 1, 'size': 1, 'number': 1, 'trend': 1, 'scale': 1, 'part': 1}
+feel;9;2;{'fell': 8, 'be': 1}
+person;9;5;{'man': 5, 'one': 1, 'men': 1, 'human': 1, 'you': 1}
+similar;9;5;{'same': 5, 'so': 1, 'like': 1, 'compare': 1, 'Such': 1}
+about;9;5;{'around': 5, 'near': 1, 'above': 1, 'slightly': 1, 'almost': 1}
+area;9;5;{'sphere': 5, 'climate': 1, 'subject': 1, 'territory': 1, 'industry': 1}
+less;9;3;{'fewer': 4, 'lower': 3, 'worse': 2}
+give;9;6;{'make': 4, 'get': 1, 'keep': 1, 'provide': 1, 'have': 1, 'provides': 1}
+earn;9;2;{'gain': 8, 'output': 1}
+part;9;8;{'one': 2, 'role': 1, 'quantity': 1, 'apart': 1, 'population': 1, 'numbers': 1, 'percent': 1, 'amount': 1}
+difficult;9;3;{'complicated': 5, 'hard': 3, 'ambiguous': 1}
+others;9;1;{'another': 9}
+find;9;7;{'take': 3, 'search': 1, 'look': 1, 'bring': 1, 'select': 1, 'seek': 1, 'flight': 1}
+live;9;2;{'leave': 8, 'exist': 1}
+woman;9;1;{'women': 9}
+everyone;8;2;{'all': 5, 'everybody': 3}
+audience;8;2;{'auditory': 7, 'authority': 1}
+areas;8;4;{'spheres': 5, 'subjects': 1, 'arena': 1, 'terrains': 1}
+raising;8;3;{'rising': 6, 'enhancing': 1, 'fostering': 1}
+proportions;8;6;{'number': 3, 'among': 1, 'parties': 1, 'amount': 1, 'level': 1, 'volume': 1}
+way;8;7;{'form': 2, 'measure': 1, 'king': 1, 'source': 1, 'the': 1, 'path': 1, 'road': 1}
+especially;8;6;{'likewise': 2, 'specially': 2, 'partly': 1, 'quite': 1, 'special': 1, 'namely': 1}
+American;8;3;{'USA': 5, 'America': 2, 'Usa': 1}
+almost;8;4;{'mostly': 5, 'nearly': 1, 'partly': 1, 'about': 1}
+each;8;1;{'every': 8}
+introduce;8;3;{'make': 5, 'take': 2, 'commit': 1}
+activity;8;5;{'action': 4, 'productivity': 1, 'sport': 1, 'deal': 1, 'work': 1}
+flights;8;4;{'travels': 3, 'travel': 3, 'flying': 1, 'travelling': 1}
+such;8;2;{'so': 5, 'that': 3}
+raises;7;3;{'rises': 5, 'meets': 1, 'arouse': 1}
+point;7;5;{'pick': 2, 'sense': 2, 'example': 1, 'plateau': 1, 'quantity': 1}
+watch;7;2;{'see': 6, 'show': 1}
+desire;7;2;{'wish': 6, 'effort': 1}
+copying;7;3;{'coping': 5, 'copies': 1, 'spreading': 1}
+significant;7;5;{'powerful': 2, 'meaningful': 2, 'sensual': 1, 'viewable': 1, 'big': 1}
+criminals;7;2;{'crimes': 6, 'prisoners': 1}
+takes;7;6;{'have': 2, 'is': 1, 'has': 1, 'needs': 1, 'stands': 1, 'spends': 1}
+trips;7;3;{'travel': 4, 'travels': 2, 'ways': 1}
+represents;7;4;{'is': 3, 'gives': 2, 'depicts': 1, 'presents': 1}
+opinion;7;5;{'topic': 2, 'perspective': 2, 'fact': 1, 'way': 1, 'meaning': 1}
+Sports;7;1;{'Sport': 7}
+adapt;7;1;{'adopt': 7}
+eyesight;7;3;{'sight': 4, 'vision': 2, 'seeing': 1}
+whose;7;2;{'whom': 4, 'who': 3}
+situation;7;5;{'moment': 2, 'position': 2, 'participant': 1, 'thing': 1, 'statement': 1}
+common;7;5;{'actual': 2, 'popular': 2, 'total': 1, 'mutual': 1, 'often': 1}
+preserve;7;3;{'save': 5, 'serve': 1, 'safe': 1}
+making;7;3;{'doing': 5, 'producing': 1, 'closing': 1}
+Therefore;7;1;{'Thereby': 7}
+those;7;1;{'whose': 7}
+sexes;7;1;{'genders': 7}
+explain;7;4;{'tell': 4, 'prove': 1, 'support': 1, 'describe': 1}
+need;7;3;{'necessity': 5, 'reason': 1, 'have': 1}
+things;7;5;{'points': 2, 'something': 2, 'supplements': 1, 'deals': 1, 'work': 1}
+access;7;3;{'enter': 5, 'permission': 1, 'use': 1}
+recent;7;1;{'last': 7}
+we;7;4;{'to': 3, 'it': 2, 'one': 1, 'human': 1}
+popular;7;5;{'famous': 3, 'pressing': 1, 'huge': 1, 'accountable': 1, 'favorable': 1}
+change;7;6;{'twist': 2, 'ruin': 1, 'development': 1, 'wary': 1, 'level': 1, 'retreat': 1}
+true;7;3;{'truth': 5, 'accurate': 1, 'read': 1}
+fell;7;3;{'felt': 5, 'fails': 1, 'slumped': 1}
+favourite;7;2;{'lovely': 6, 'loveliest': 1}
+very;7;3;{'much': 4, 'so': 2, 'more': 1}
+experience;7;5;{'feel': 2, 'time': 2, 'have': 1, 'face': 1, 'force': 1}
+feature;7;6;{'part': 2, 'trend': 1, 'notice': 1, 'data': 1, 'distinction': 1, 'area': 1}
+sit;7;1;{'seat': 7}
+policy;7;2;{'politics': 4, 'politic': 3}
+constituted;7;3;{'consisted': 3, 'represented': 2, 'takes': 2}
+slightly;6;6;{'lightly': 1, 'gradually': 1, 'barely': 1, 'little': 1, 'stable': 1, 'slowly': 1}
+idea;6;5;{'issue': 2, 'thought': 1, 'think': 1, 'extent': 1, 'statement': 1}
+made;6;5;{'done': 2, 'implemented': 1, 'provided': 1, 'had': 1, 'maid': 1}
+reaches;6;5;{'compose': 2, 'constitutes': 1, 'takes': 1, 'achieve': 1, 'is': 1}
+price;6;1;{'prise': 6}
+kept;6;2;{'saved': 5, 'saves': 1}
+expected;6;4;{'considered': 2, 'supposed': 2, 'possible': 1, 'envisaged': 1}
+offer;6;4;{'afford': 3, 'bring': 1, 'suggest': 1, 'develop': 1}
+length;6;2;{'kilometres': 5, 'road': 1}
+latter;6;2;{'last': 5, 'least': 1}
+daily;6;2;{'everyday': 4, 'day': 2}
+few;6;1;{'little': 6}
+teach;6;2;{'learn': 5, 'study': 1}
+normal;6;2;{'usual': 5, 'regular': 1}
+observed;6;3;{'noticed': 3, 'concerned': 2, 'covered': 1}
+demonstrated;6;6;{'kept': 1, 'neglected': 1, 'seen': 1, 'proposed': 1, 'depicted': 1, 'provided': 1}
+axis;6;2;{'axe': 5, 'line': 1}
+prospects;6;1;{'perspectives': 6}
+comprise;6;2;{'consist': 5, 'are': 1}
+factories;6;3;{'manufactures': 3, 'plants': 2, 'fabrics': 1}
+male;6;3;{'men': 4, 'boys': 1, 'female': 1}
+either;6;2;{'too': 4, 'also': 2}
+protect;6;5;{'defend': 2, 'provide': 1, 'avoid': 1, 'preserve': 1, 'predict': 1}
+above;6;3;{'over': 3, 'about': 2, 'higher': 1}
+said;6;3;{'told': 3, 'stated': 2, 'claimed': 1}
+why;6;1;{'way': 6}
+economies;6;1;{'economics': 6}
+benefit;6;3;{'profit': 4, 'usefulness': 1, 'use': 1}
+argue;6;4;{'agree': 3, 'maintain': 1, 'reason': 1, 'contradict': 1}
+rather;6;2;{'better': 4, 'quite': 2}
+Some;6;1;{'Someone': 6}
+look;6;3;{'looking': 4, 'search': 1, 'research': 1}
+save;6;3;{'saving': 4, 'economy': 1, 'rake': 1}
+serious;6;6;{'severe': 1, 'big': 1, 'heavy': 1, 'important': 1, 'significant': 1, 'large': 1}
+quantity;6;4;{'quality': 3, 'percentage': 1, 'number': 1, 'value': 1}
+a;6;2;{'their': 5, 'at': 1}
+increasing;6;2;{'growing': 5, 'size': 1}
+both;6;2;{'either': 4, 'and': 2}
+food;6;3;{'meal': 4, 'products': 1, 'goal': 1}
+years;6;2;{'ages': 5, 'periods': 1}
+unemployment;6;2;{'unemployed': 5, 'data': 1}
+groups;6;5;{'sections': 2, 'genres': 1, 'gaps': 1, 'collectives': 1, 'collective': 1}
+citizens;6;5;{'natives': 2, 'society': 1, 'they': 1, 'consumers': 1, 'people': 1}
+started;6;3;{'became': 4, 'tend': 1, 'stared': 1}
+resources;6;1;{'sources': 6}
+attending;5;1;{'visiting': 5}
+consider;5;5;{'hope': 1, 'state': 1, 'think': 1, 'describe': 1, 'claim': 1}
+diseases;5;2;{'illness': 4, 'illnesses': 1}
+below;5;1;{'under': 5}
+solution;5;3;{'decision': 3, 'dividing': 1, 'way': 1}
+Other;5;1;{'Another': 5}
+play;5;3;{'have': 2, 'take': 2, 'gone': 1}
+last;5;4;{'latest': 2, 'endure': 1, 'longs': 1, 'least': 1}
+statistics;5;2;{'statics': 4, 'dynamic': 1}
+follow;5;4;{'use': 2, 'have': 1, 'do': 1, 'appear': 1}
+companies;5;4;{'works': 2, 'brands': 1, 'firms': 1, 'men': 1}
+one;5;2;{'it': 4, 'human': 1}
+comprised;5;2;{'consisted': 3, 'was': 2}
+start;5;3;{'begin': 2, 'become': 2, 'make': 1}
+makes;5;1;{'has': 5}
+rises;5;3;{'raise': 3, 'raises': 1, 'amounted': 1}
+correct;5;3;{'correctly': 3, 'improve': 1, 'right': 1}
+difference;5;3;{'separation': 2, 'rupture': 2, 'step': 1}
+These;5;2;{'There': 4, 'Those': 1}
+decline;5;4;{'drop': 2, 'dip': 1, 'draw': 1, 'downgrade': 1}
+human;5;2;{'man': 3, 'people': 2}
+keep;5;3;{'save': 2, 'stay': 2, 'take': 1}
+absolutely;5;3;{'strictly': 2, 'completely': 2, 'definitely': 1}
+received;5;3;{'got': 3, 'make': 1, 'occupied': 1}
+Russian;5;1;{'Russia': 5}
+issue;5;2;{'question': 4, 'opinion': 1}
+system;5;2;{'station': 4, 'sustenance': 1}
+money;5;2;{'many': 4, 'salary': 1}
+develop;5;5;{'provide': 1, 'create': 1, 'produce': 1, 'improve': 1, 'rise': 1}
+impose;5;3;{'make': 2, 'put': 2, 'do': 1}
+shown;5;3;{'provided': 2, 'given': 2, 'mentioned': 1}
+lighting;5;1;{'lightning': 5}
+period;5;3;{'time': 3, 'years': 1, 'age': 1}
+main;5;3;{'mane': 3, 'chief': 1, 'prominent': 1}
+most;5;4;{'vast': 2, 'all': 1, 'average': 1, 'many': 1}
+regardless;5;2;{'despite': 4, 'independently': 1}
+clothing;5;2;{'cloth': 4, 'clothes': 1}
+suppose;5;4;{'suggest': 2, 'suspend': 1, 'see': 1, 'confirm': 1}
+completely;5;1;{'absolutely': 5}
+jobs;5;2;{'works': 4, 'labour': 1}
+conditions;5;3;{'conditionals': 3, 'situation': 1, 'problems': 1}
+ways;5;5;{'issues': 1, 'type': 1, 'sides': 1, 'variants': 1, 'factors': 1}
+since;5;1;{'from': 5}
+taken;5;2;{'done': 3, 'made': 2}
+relieve;5;1;{'relief': 5}
+except;5;3;{'despite': 3, 'excluded': 1, 'beside': 1}
+statement;5;2;{'topic': 4, 'issue': 1}
+constitutes;5;4;{'consists': 2, 'contains': 1, 'compound': 1, 'ranges': 1}
+constitute;5;4;{'are': 2, 'with': 1, 'illustrate': 1, 'take': 1}
+study;5;2;{'learn': 3, 'educate': 2}
+female;5;2;{'women': 4, 'girls': 1}
+solving;5;3;{'solution': 2, 'deciding': 2, 'reducing': 1}
+creates;5;2;{'makes': 4, 'brings': 1}
+sites;5;3;{'cites': 3, 'nets': 1, 'parts': 1}
+attractive;4;2;{'attracting': 3, 'essential': 1}
+much;4;3;{'low': 2, 'often': 1, 'big': 1}
+financial;4;1;{'money': 4}
+rising;4;1;{'raising': 4}
+given;4;3;{'said': 2, 'accounted': 1, 'gotten': 1}
+presents;4;4;{'gives': 1, 'includes': 1, 'represents': 1, 'provides': 1}
+index;4;4;{'aspect': 1, 'value': 1, 'character': 1, 'line': 1}
+age;4;2;{'years': 2, 'year': 2}
+half;4;3;{'twice': 2, 'part': 1, 'health': 1}
+attended;4;1;{'visited': 4}
+devote;4;4;{'put': 1, 'spent': 1, 'give': 1, 'divide': 1}
+essay;4;3;{'work': 2, 'paper': 1, 'issue': 1}
+although;4;1;{'however': 4}
+mental;4;2;{'mind': 3, 'nervous': 1}
+domestic;4;3;{'native': 2, 'inner': 1, 'inside': 1}
+equal;4;4;{'reveal': 1, 'levelled': 1, 'have': 1, 'stable': 1}
+break;4;2;{'brake': 3, 'prohibit': 1}
+wrong;4;3;{'bad': 2, 'filthy': 1, 'view': 1}
+raised;4;3;{'risen': 2, 'moulded': 1, 'born': 1}
+anybody;4;1;{'you': 4}
+kind;4;3;{'kinds': 2, 'view': 1, 'kid': 1}
+free;4;3;{'fee': 2, 'open': 1, 'freedom': 1}
+significantly;4;3;{'greatly': 2, 'important': 1, 'highly': 1}
+Is;4;1;{'Does': 4}
+committed;4;2;{'done': 2, 'made': 2}
+nearly;4;3;{'around': 2, 'neat': 1, 'namely': 1}
+notice;4;4;{'mark': 1, 'mention': 1, 'witness': 1, 'resume': 1}
+possible;4;3;{'possibly': 2, 'able': 1, 'available': 1}
+devices;4;4;{'subject': 1, 'equipments': 1, 'technologies': 1, 'them': 1}
+prone;4;4;{'tend': 1, 'common': 1, 'attractive': 1, 'prevalent': 1}
+someone;4;3;{'somebody': 2, 'you': 1, 'anyone': 1}
+without;4;1;{'not': 4}
+widespread;4;3;{'spread': 2, 'mass': 1, 'popular': 1}
+profit;4;4;{'fee': 1, 'share': 1, 'use': 1, 'type': 1}
+restrict;4;3;{'limit': 2, 'abandon': 1, 'arrest': 1}
+birth;4;2;{'born': 2, 'birthday': 2}
+range;4;4;{'arrange': 1, 'variety': 1, 'take': 1, 'go': 1}
+will;4;2;{'can': 3, 'way': 1}
+consequences;4;4;{'circumstances': 1, 'extent': 1, 'cases': 1, 'reason': 1}
+damage;4;3;{'hurt': 2, 'harm': 1, 'consequences': 1}
+limited;4;3;{'restricted': 2, 'reduced': 1, 'constraint': 1}
+harmful;4;2;{'hurtful': 3, 'damaging': 1}
+state;4;4;{'government': 1, 'regime': 1, 'countries': 1, 'believe': 1}
+special;4;3;{'peculiar': 2, 'individual': 1, 'specific': 1}
+strongly;4;2;{'strictly': 2, 'highly': 2}
+Besides;4;2;{'Beside': 3, 'Because': 1}
+expenses;4;4;{'expanses': 1, 'expenditure': 1, 'spends': 1, 'outlay': 1}
+tendency;4;4;{'development': 1, 'perspective': 1, 'topic': 1, 'result': 1}
+tell;4;3;{'say': 2, 'describe': 1, 'said': 1}
+researches;4;2;{'researchers': 3, 'investigations': 1}
+income;4;3;{'money': 2, 'lines': 1, 'payment': 1}
+correspondingly;4;3;{'accordingly': 2, 'consequently': 1, 'relatively': 1}
+underground;4;2;{'metro': 3, 'subway': 1}
+receive;4;3;{'have': 2, 'give': 1, 'get': 1}
+chart;4;4;{'part': 1, 'court': 1, 'bar': 1, 'case': 1}
+argument;4;1;{'argue': 4}
+solved;4;3;{'resolved': 2, 'developed': 1, 'used': 1}
+right;4;4;{'low': 1, 'law': 1, 'allowable': 1, 'true': 1}
+conducted;4;1;{'made': 4}
+support;4;4;{'encourage': 1, 'adhere': 1, 'create': 1, 'share': 1}
+same;4;2;{'some': 3, 'one': 1}
+values;4;3;{'meanings': 2, 'world': 1, 'valuables': 1}
+quality;4;1;{'level': 4}
+occur;4;2;{'are': 2, 'be': 2}
+convenient;4;1;{'comfortable': 4}
+whether;4;1;{'either': 4}
+comes;4;1;{'goes': 4}
+future;4;2;{'further': 3, 'later': 1}
+sharply;4;3;{'strongly': 2, 'fast': 1, 'highly': 1}
+pay;4;1;{'give': 4}
+huge;4;3;{'big': 2, 'high': 1, 'steep': 1}
+prevent;4;4;{'predict': 1, 'save': 1, 'treat': 1, 'stop': 1}
+students;4;3;{'they': 2, 'men': 1, 'pupils': 1}
+thing;4;4;{'deal': 1, 'condition': 1, 'therapy': 1, 'point': 1}
+needs;4;4;{'routine': 1, 'supply': 1, 'factors': 1, 'wishes': 1}
+require;4;3;{'demand': 2, 'need': 1, 'needs': 1}
+place;3;2;{'put': 2, 'way': 1}
+obtained;3;2;{'got': 2, 'attended': 1}
+experienced;3;3;{'faced': 1, 'made': 1, 'underwent': 1}
+beginning;3;3;{'starting': 1, 'start': 1, 'early': 1}
+houses;3;1;{'condominiums': 3}
+males;3;2;{'mails': 2, 'men': 1}
+let;3;3;{'allow': 1, 'make': 1, 'enables': 1}
+thieves;3;1;{'thefts': 3}
+goal;3;3;{'course': 1, 'line': 1, 'idea': 1}
+kinds;3;2;{'types': 2, 'species': 1}
+move;3;3;{'have': 1, 'replace': 1, 'relocate': 1}
+solutions;3;3;{'aspects': 1, 'decisions': 1, 'ways': 1}
+greatly;3;1;{'highly': 3}
+aircraft;3;1;{'airplanes': 3}
+remain;3;1;{'stay': 3}
+possibility;3;3;{'evidence': 1, 'opportunity': 1, 'probability': 1}
+investment;3;2;{'investigation': 2, 'inventions': 1}
+fall;3;3;{'fail': 1, 'decrease': 1, 'fault': 1}
+expansion;3;2;{'extension': 2, 'enlargement': 1}
+arises;3;1;{'appears': 3}
+technological;3;1;{'technical': 3}
+achieved;3;3;{'took': 1, 'gained': 1, 'reached': 1}
+spread;3;2;{'widespread': 2, 'share': 1}
+transported;3;1;{'transformed': 3}
+total;3;2;{'general': 2, 'whole': 1}
+well;3;3;{'deep': 1, 'fascinated': 1, 'long': 1}
+plays;3;2;{'has': 2, 'is': 1}
+became;3;2;{'got': 2, 'stayed': 1}
+First;3;1;{'Firstly': 3}
+options;3;1;{'variants': 3}
+still;3;1;{'yet': 3}
+agricultural;3;1;{'agriculture': 3}
+reduction;3;1;{'reduce': 3}
+goods;3;3;{'use': 1, 'system': 1, 'transportation': 1}
+presented;3;3;{'considered': 1, 'divided': 1, 'shown': 1}
+come;3;2;{'go': 2, 'rise': 1}
+held;3;1;{'had': 3}
+began;3;1;{'became': 3}
+invest;3;2;{'fund': 2, 'pay': 1}
+studies;3;2;{'researches': 2, 'investigations': 1}
+attend;3;2;{'visit': 2, 'attempt': 1}
+methods;3;1;{'way': 3}
+mention;3;3;{'talk': 1, 'maintain': 1, 'reckon': 1}
+fluctuations;3;3;{'rhythm': 1, 'movement': 1, 'vibrations': 1}
+sedentary;3;2;{'sitting': 2, 'static': 1}
+fit;3;3;{'meets': 1, 'available': 1, 'athletic': 1}
+represent;3;1;{'present': 3}
+suggested;3;2;{'offered': 2, 'given': 1}
+trend;3;2;{'tendency': 2, 'consistency': 1}
+investments;3;1;{'investigations': 3}
+actions;3;3;{'enjoyment': 1, 'moves': 1, 'accidents': 1}
+certain;3;3;{'particular': 1, 'some': 1, 'special': 1}
+surfing;3;3;{'suffering': 1, 'reading': 1, 'watching': 1}
+policies;3;1;{'politics': 3}
+legal;3;1;{'law': 3}
+adopt;3;3;{'take': 1, 'show': 1, 'accept': 1}
+o'clock;3;1;{'hours': 3}
+set;3;2;{'stand': 2, 'complex': 1}
+regions;3;3;{'state': 1, 'countries': 1, 'world': 1}
+maintain;3;3;{'conclude': 1, 'support': 1, 'follow': 1}
+Then;3;2;{'There': 2, 'After': 1}
+house;3;2;{'home': 2, 'homes': 1}
+stay;3;2;{'stand': 2, 'insist': 1}
+showing;3;3;{'covering': 1, 'of': 1, 'seen': 1}
+decreasing;3;2;{'download': 2, 'fall': 1}
+requires;3;2;{'needs': 2, 'tend': 1}
+something;3;1;{'anything': 3}
+strong;3;3;{'powerful': 1, 'great': 1, 'huge': 1}
+levels;3;3;{'degrees': 1, 'states': 1, 'graphs': 1}
+control;3;3;{'decide': 1, 'preventing': 1, 'care': 1}
+observe;3;3;{'absorb': 1, 'remark': 1, 'witness': 1}
+position;3;3;{'view': 1, 'participation': 1, 'posts': 1}
+Their;3;1;{'Its': 3}
+reasonable;3;3;{'true': 1, 'available': 1, 'worth': 1}
+only;3;3;{'themselves': 1, 'all': 1, 'just': 1}
+divided;3;2;{'derived': 2, 'separated': 1}
+year;3;3;{'period': 1, 'one': 1, 'day': 1}
+stayed;3;1;{'stood': 3}
+stuff;3;1;{'staff': 3}
+better;3;1;{'more': 3}
+committing;3;2;{'doing': 2, 'making': 1}
+learning;3;2;{'education': 2, 'educate': 1}
+pace;3;2;{'temp': 2, 'rhythm': 1}
+society;3;2;{'social': 2, 'people': 1}
+its;3;2;{'this': 2, 'owns': 1}
+events;3;3;{'things': 1, 'awards': 1, 'evidences': 1}
+arguments;3;3;{'ideas': 1, 'reasons': 1, 'minds': 1}
+argues;3;1;{'agrees': 3}
+view;3;3;{'way': 1, 'problem': 1, 'examine': 1}
+grow;3;2;{'create': 2, 'produce': 1}
+also;3;2;{'too': 2, 'as': 1}
+compared;3;2;{'relative': 2, 'relatively': 1}
+competition;3;3;{'interference': 1, 'rivalry': 1, 'concurrence': 1}
+When;3;1;{'Then': 3}
+stable;3;2;{'stabilized': 2, 'state': 1}
+till;3;1;{'to': 3}
+fill;3;1;{'fulfill': 3}
+care;3;1;{'carry': 3}
+fair;3;3;{'honest': 1, 'truly': 1, 'well': 1}
+users;3;3;{'visitors': 1, 'accesses': 1, 'auditory': 1}
+funded;3;2;{'invested': 2, 'paid': 1}
+process;3;3;{'length': 1, 'work': 1, 'recycle': 1}
+speak;3;2;{'say': 2, 'tell': 1}
+influence;3;3;{'input': 1, 'involve': 1, 'impact': 1}
+claim;3;3;{'say': 1, 'reclaim': 1, 'consider': 1}
+lies;3;1;{'is': 3}
+earlier;3;3;{'sooner': 1, 'lower': 1, 'firstly': 1}
+content;3;3;{'information': 1, 'files': 1, 'stuff': 1}
+reveals;3;2;{'shows': 2, 'acts': 1}
+result;3;3;{'appear': 1, 'time': 1, 'data': 1}
+throw;3;1;{'through': 3}
+stealing;3;3;{'thieving': 1, 'theft': 1, 'still': 1}
+advantages;3;2;{'pros': 2, 'drawbacks': 1}
+would;3;1;{'do': 3}
+graphs;3;1;{'graphics': 3}
+promote;3;2;{'provide': 2, 'spread': 1}
+suffer;3;3;{'cause': 1, 'carry': 1, 'get': 1}
+prices;3;2;{'costs': 2, 'costa': 1}
+air;3;3;{'are': 1, 'atmosphere': 1, 'weather': 1}
+just;3;1;{'only': 3}
+longer;3;1;{'more': 3}
+i;3;1;{'A': 3}
+prevents;3;2;{'predict': 2, 'hinder': 1}
+extremely;3;3;{'really': 1, 'utterly': 1, 'absolutely': 1}
+unite;3;3;{'related': 1, 'merge': 1, 'connect': 1}
+avoid;2;2;{'bypass': 1, 'eliminate': 1}
+forbid;2;2;{'reduce': 1, 'delete': 1}
+implement;2;2;{'create': 1, 'practice': 1}
+occupy;2;1;{'have': 2}
+definition;2;2;{'perception': 1, 'perceptions': 1}
+spoiled;2;2;{'harmed': 1, 'failed': 1}
+ratio;2;1;{'ration': 2}
+disadvantages;2;2;{'backwards': 1, 'cons': 1}
+effort;2;2;{'power': 1, 'strength': 1}
+reckless;2;1;{'haphazard': 2}
+exported;2;1;{'imported': 2}
+carries;2;1;{'takes': 2}
+improved;2;2;{'proven': 1, 'advanced': 1}
+serve;2;1;{'have': 2}
+role;2;2;{'play': 1, 'function': 1}
+duration;2;1;{'length': 2}
+able;2;1;{'capable': 2}
+Swedish;2;1;{'Swiss': 2}
+steal;2;2;{'theft': 1, 'bring': 1}
+equipment;2;2;{'technology': 1, 'skills': 1}
+disabled;2;2;{'injure': 1, 'invalid': 1}
+versus;2;1;{'against': 2}
+carriers;2;1;{'carries': 2}
+lost;2;2;{'loosed': 1, 'losing': 1}
+suitable;2;2;{'worthy': 1, 'fitted': 1}
+located;2;1;{'situated': 2}
+requirements;2;1;{'conditions': 2}
+unlike;2;2;{'that': 1, 'from': 1}
+equaled;2;2;{'accounted': 1, 'counted': 1}
+persecute;2;2;{'punish': 1, 'follow': 1}
+actual;2;2;{'right': 1, 'available': 1}
+potential;2;2;{'probable': 1, 'possibilities': 1}
+gangs;2;1;{'bands': 2}
+efficient;2;2;{'sufficient': 1, 'profound': 1}
+explore;2;2;{'study': 1, 'meet': 1}
+population;2;1;{'people': 2}
+application;2;2;{'interface': 1, 'audience': 1}
+hard;2;2;{'uneasy': 1, 'heavy': 1}
+sides;2;2;{'parts': 1, 'points': 1}
+practically;2;2;{'particularly': 1, 'almost': 1}
+encourage;2;2;{'around': 1, 'ensure': 1}
+carefully;2;2;{'better': 1, 'thoroughly': 1}
+pollute;2;2;{'waste': 1, 'contribute': 1}
+transfer;2;2;{'remove': 1, 'graduate': 1}
+applied;2;2;{'deployed': 1, 'appropriate': 1}
+Women;2;1;{'Females': 2}
+known;2;2;{'held': 1, 'considered': 1}
+forced;2;1;{'made': 2}
+clearly;2;2;{'easily': 1, 'well': 1}
+drop;2;2;{'degradation': 1, 'plummet': 1}
+vehicles;2;1;{'transport': 2}
+knowledge;2;2;{'mind': 1, 'acknowledgement': 1}
+surf;2;2;{'search': 1, 'see': 1}
+million;2;1;{'billions': 2}
+banned;2;1;{'closed': 2}
+possibilities;2;2;{'variants': 1, 'ability': 1}
+accessing;2;2;{'spending': 1, 'using': 1}
+leave;2;2;{'stayed': 1, 'stay': 1}
+describe;2;2;{'consider': 1, 'give': 1}
+under;2;1;{'in': 2}
+improving;2;1;{'repairing': 2}
+absence;2;2;{'gap': 1, 'absent': 1}
+aim;2;2;{'demand': 1, 'wish': 1}
+separate;2;1;{'divide': 2}
+trade;2;2;{'make': 1, 'business': 1}
+unfair;2;2;{'guilty': 1, 'untrue': 1}
+active;2;2;{'fast': 1, 'acting': 1}
+somebody;2;1;{'you': 2}
+global;2;2;{'world': 1, 'worlds': 1}
+stopped;2;2;{'cancelled': 1, 'finished': 1}
+vacancies;2;2;{'offers': 1, 'vocations': 1}
+saying;2;1;{'telling': 2}
+include;2;2;{'use': 1, 'involve': 1}
+proper;2;1;{'right': 2}
+worry;2;1;{'carry': 2}
+adapted;2;1;{'adopted': 2}
+severely;2;2;{'hardly': 1, 'strong': 1}
+emit;2;2;{'threw': 1, 'exhaust': 1}
+Somebody;2;1;{'Some': 2}
+type;2;2;{'article': 1, 'tip': 1}
+fields;2;2;{'kinds': 1, 'directions': 1}
+limit;2;2;{'shorten': 1, 'reduce': 1}
+partially;2;2;{'particularly': 1, 'particular': 1}
+qualifications;2;1;{'professionals': 2}
+closely;2;2;{'precisely': 1, 'tightly': 1}
+individual;2;2;{'relational': 1, 'wish': 1}
+occurs;2;2;{'is': 1, 'happens': 1}
+promotion;2;2;{'commercial': 1, 'feedback': 1}
+communicating;2;1;{'connecting': 2}
+businesses;2;2;{'tows': 1, 'brands': 1}
+calls;2;2;{'phones': 1, 'states': 1}
+cope;2;2;{'deal': 1, 'manage': 1}
+unpleasant;2;1;{'bad': 2}
+conclusion;2;2;{'decision': 1, 'conduction': 1}
+new;2;2;{'a': 1, 'young': 1}
+portion;2;2;{'type': 1, 'amount': 1}
+answer;2;2;{'question': 1, 'decide': 1}
+fells;2;1;{'bring': 2}
+influenced;2;1;{'caused': 2}
+prediction;2;1;{'predicting': 2}
+hits;2;1;{'heats': 2}
+related;2;2;{'close': 1, 'connected': 1}
+comparing;2;2;{'according': 1, 'like': 1}
+regarding;2;1;{'considering': 2}
+constant;2;2;{'static': 1, 'still': 1}
+gain;2;2;{'take': 1, 'get': 1}
+considers;2;2;{'tells': 1, 'is': 1}
+fast;2;2;{'quick': 1, 'big': 1}
+format;2;1;{'version': 2}
+suggestion;2;2;{'extend': 1, 'willing': 1}
+yourself;2;1;{'you': 2}
+trains;2;2;{'tracks': 1, 'fans': 1}
+negative;2;2;{'unsatisfied': 1, 'wrong': 1}
+appear;2;2;{'be': 1, 'occur': 1}
+replaced;2;2;{'substituted': 1, 'exchanged': 1}
+capabilities;2;2;{'possibilities': 1, 'opportunities': 1}
+online;2;2;{'Internet': 1, 'internet': 1}
+parts;2;2;{'ends': 1, 'conditions': 1}
+creating;2;1;{'making': 2}
+modern;2;2;{'developed': 1, 'today': 1}
+behaviour;2;2;{'actions': 1, 'prime': 1}
+sales;2;1;{'sellers': 2}
+positive;2;2;{'good': 1, 'healthful': 1}
+consumers;2;2;{'people': 1, 'users': 1}
+prosperity;2;2;{'affluence': 1, 'flourish': 1}
+passengers;2;1;{'people': 2}
+having;2;2;{'working': 1, 'giving': 1}
+good;2;2;{'healthy': 1, 'pleasant': 1}
+They;2;2;{'These': 1, 'these': 1}
+brings;2;1;{'gives': 2}
+demonstrate;2;1;{'show': 2}
+declined;2;2;{'drown': 1, 'reduced': 1}
+habits;2;2;{'changes': 1, 'habitats': 1}
+downloaded;2;1;{'download': 2}
+decreases;2;2;{'falls': 1, 'achieves': 1}
+drugs;2;1;{'doping': 2}
+question;2;2;{'choice': 1, 'contradict': 1}
+younger;2;2;{'previous': 1, 'before': 1}
+fail;2;2;{'lose': 1, 'neglect': 1}
+activities;2;2;{'time': 1, 'exercises': 1}
+regarded;2;2;{'viewed': 1, 'claimed': 1}
+though;2;1;{'through': 2}
+via;2;1;{'in': 2}
+observation;2;2;{'discussion': 1, 'chart': 1}
+property;2;2;{'ownership': 1, 'privacy': 1}
+university;2;1;{'study': 2}
+crime;2;1;{'criminality': 2}
+allows;2;2;{'lets': 1, 'let': 1}
+happen;2;2;{'become': 1, 'be': 1}
+protected;2;1;{'prevented': 2}
+connected;2;2;{'linking': 1, 'linked': 1}
+remains;2;1;{'stays': 2}
+Here;2;1;{'There': 2}
+seems;2;1;{'appears': 2}
+prohibit;2;1;{'ban': 2}
+registered;2;2;{'considered': 1, 'noticeable': 1}
+rating;2;2;{'rang': 1, 'sphere': 1}
+if;2;2;{'where': 1, 'do': 1}
+spheres;2;2;{'sites': 1, 'causes': 1}
+shorter;2;1;{'smaller': 2}
+today;2;1;{'now': 2}
+help;2;2;{'conduct': 1, 'know': 1}
+debates;2;1;{'arguments': 2}
+fuel;2;2;{'oil': 1, 'engine': 1}
+exceed;2;2;{'overcome': 1, 'overcame': 1}
+category;2;2;{'calling': 1, 'people': 1}
+remained;2;2;{'consist': 1, 'maintained': 1}
+science;2;1;{'sciences': 2}
+moving;2;2;{'money': 1, 'scratch': 1}
+around;2;2;{'under': 1, 'changed': 1}
+define;2;2;{'deliver': 1, 'frame': 1}
+worldwide;2;1;{'world': 2}
+check;2;2;{'watch': 1, 'see': 1}
+try;2;2;{'tend': 1, 'taste': 1}
+choose;2;2;{'prefer': 1, 'make': 1}
+living;2;1;{'leaving': 2}
+points;2;2;{'fact': 1, 'measures': 1}
+changes;2;2;{'development': 1, 'varies': 1}
+exports;2;1;{'imports': 2}
+causes;2;2;{'sources': 1, 'reasons': 1}
+problem;2;2;{'question': 1, 'complication': 1}
+whom;2;1;{'who': 2}
+agree;2;2;{'convinced': 1, 'accept': 1}
+revenues;2;1;{'benefit': 2}
+times;2;2;{'size': 1, 'periods': 1}
+available;2;2;{'held': 1, 'able': 1}
+genders;2;1;{'male': 2}
+illustrates;2;2;{'works': 1, 'adds': 1}
+underwent;2;1;{'was': 2}
+went;2;2;{'grow': 1, 'roses': 1}
+here;2;1;{'there': 2}
+reveal;2;2;{'discover': 1, 'depict': 1}
+entry;2;1;{'enter': 2}
+increases;2;2;{'growths': 1, 'rockets': 1}
+successful;2;2;{'great': 1, 'fortunate': 1}
+opinions;2;2;{'people': 1, 'sides': 1}
+matters;2;1;{'thing': 2}
+you;2;2;{'yourself': 1, 'him': 1}
+really;2;2;{'totally': 1, 'fully': 1}
+demonstrates;2;2;{'experience': 1, 'has': 1}
+residents;2;1;{'natives': 2}
+production;2;2;{'market': 1, 'output': 1}
+travel;2;2;{'journey': 1, 'overcome': 1}
+harsh;2;1;{'hard': 2}
+got;2;2;{'lifts': 1, 'kept': 1}
+drawback;2;1;{'minus': 2}
+planes;2;2;{'crafts': 1, 'plant': 1}
+changed;2;2;{'were': 1, 'differed': 1}
+minutes;2;1;{'time': 2}
+attitude;2;2;{'relationship': 1, 'position': 1}
+during;2;1;{'while': 2}
+returning;2;1;{'return': 2}
+counted;2;1;{'consisted': 2}
+constructing;2;1;{'producing': 2}
+becoming;2;1;{'entering': 2}
+becomes;2;2;{'is': 1, 'goes': 1}
+development;2;2;{'update': 1, 'evolution': 1}
+our;2;1;{'own': 2}
+chance;2;1;{'change': 2}
+wider;2;1;{'bigger': 2}
+dairy;2;1;{'milk': 2}
+ruin;2;1;{'collapse': 2}
+weight;2;2;{'fat': 1, 'obesity': 1}
+pattern;2;2;{'map': 1, 'slope': 1}
+admit;2;2;{'take': 1, 'give': 1}
+specifically;2;1;{'exactly': 2}
+helps;2;1;{'support': 2}
+prosecuted;2;2;{'pursued': 1, 'pressed': 1}
+never;2;1;{'not': 2}
+treatment;2;2;{'medicine': 1, 'insurance': 1}
+injuries;2;2;{'damaging': 1, 'traumas': 1}
+taxes;2;2;{'rate': 1, 'bills': 1}
+used;2;2;{'needed': 1, 'developed': 1}
+guarantee;2;2;{'confidence': 1, 'evidences': 1}
+harm;2;2;{'suffer': 1, 'destroy': 1}
+appearance;2;2;{'look': 1, 'view': 1}
+shortage;2;2;{'shortcoming': 1, 'lack': 1}
+shortest;2;2;{'smallest': 1, 'least': 1}
+realize;2;1;{'realise': 2}
+starts;2;2;{'begin': 1, 'begins': 1}
+bad;2;2;{'low': 1, 'weak': 1}
+entire;2;2;{'all': 1, 'common': 1}
+remember;2;2;{'consider': 1, 'remind': 1}
+recorded;2;1;{'fixed': 2}
+express;2;2;{'provide': 1, 'show': 1}
+Consequently;2;1;{'Accordingly': 2}
+twice;2;1;{'double': 2}
+falling;2;1;{'drop': 2}
+seem;2;2;{'tend': 1, 'is': 1}
+factors;2;2;{'facts': 1, 'reasons': 1}
+tend;2;2;{'direct': 1, 'prone': 1}
+atmosphere;2;2;{'vibe': 1, 'condition': 1}
+approach;2;2;{'idea': 1, 'thing': 1}
+enjoy;2;2;{'have': 1, 'love': 1}
+volume;2;2;{'amount': 1, 'process': 1}
+general;2;1;{'common': 2}
+time;2;2;{'hours': 1, 'strength': 1}
+As;2;1;{'Like': 2}
+measures;2;2;{'points': 1, 'actions': 1}
+freely;2;1;{'free': 2}
+arise;2;1;{'appear': 2}
+helpful;2;2;{'appropriate': 1, 'nice': 1}
+involved;2;2;{'busy': 1, 'included': 1}
+games;2;1;{'plays': 2}
+unimportant;2;1;{'empty': 2}
+recall;2;2;{'remind': 1, 'forget': 1}
+quickly;2;1;{'fast': 2}
+types;2;2;{'points': 1, 'stages': 1}
+singular;1;1;{'one': 1}
+moved;1;1;{'replaced': 1}
+resolve;1;1;{'solve': 1}
+acquainted;1;1;{'known': 1}
+meaningless;1;1;{'stupid': 1}
+prohibits;1;1;{'punishes': 1}
+personality;1;1;{'person': 1}
+admissions;1;1;{'attendance': 1}
+reminder;1;1;{'note': 1}
+attempt;1;1;{'trying': 1}
+urgent;1;1;{'tackling': 1}
+attentive;1;1;{'detailed': 1}
+concept;1;1;{'extent': 1}
+skill;1;1;{'work': 1}
+conducting;1;1;{'leading': 1}
+hack;1;1;{'break': 1}
+declining;1;1;{'getting': 1}
+wise;1;1;{'comfortable': 1}
+overlooked;1;1;{'admitted': 1}
+demolish;1;1;{'deteriorate': 1}
+vacations;1;1;{'vacancies': 1}
+principle;1;1;{'principal': 1}
+calm;1;1;{'claim': 1}
+quit;1;1;{'left': 1}
+favourable;1;1;{'corresponding': 1}
+ensure;1;1;{'prove': 1}
+cleaner;1;1;{'clearer': 1}
+teacher;1;1;{'tutor': 1}
+highlights;1;1;{'reflects': 1}
+stereotype;1;1;{'predictable': 1}
+garbage;1;1;{'junk': 1}
+vast;1;1;{'fast': 1}
+e.g.;1;1;{'etc': 1}
+vehicle;1;1;{'machine': 1}
+unproductive;1;1;{'ineffective': 1}
+event;1;1;{'evidence': 1}
+spot;1;1;{'stroke': 1}
+earth;1;1;{'ground': 1}
+ubiquitous;1;1;{'overall': 1}
+broader;1;1;{'rather': 1}
+classmates;1;1;{'pupils': 1}
+bet;1;1;{'vote': 1}
+valid;1;1;{'open': 1}
+hold;1;1;{'keep': 1}
+scheme;1;1;{'shape': 1}
+failure;1;1;{'hit': 1}
+nothing;1;1;{'nowhere': 1}
+coverage;1;1;{'span': 1}
+inborn;1;1;{'intake': 1}
+putting;1;1;{'placing': 1}
+visits;1;1;{'visitors': 1}
+substantially;1;1;{'ultimately': 1}
+computer;1;1;{'desktop': 1}
+ask;1;1;{'answer': 1}
+identical;1;1;{'common': 1}
+bottom;1;1;{'lowest': 1}
+mother;1;1;{'maternal': 1}
+native;1;1;{'natural': 1}
+All;1;1;{'Each': 1}
+traffic;1;1;{'travelling': 1}
+creations;1;1;{'entertainments': 1}
+perfect;1;1;{'ideal': 1}
+confirm;1;1;{'right': 1}
+friend;1;1;{'civilian': 1}
+scare;1;1;{'fear': 1}
+infinite;1;1;{'endless': 1}
+competence;1;1;{'maturity': 1}
+formed;1;1;{'was': 1}
+records;1;1;{'positions': 1}
+representing;1;1;{'of': 1}
+lasts;1;1;{'is': 1}
+supplements;1;1;{'preparations': 1}
+exactly;1;1;{'directly': 1}
+partner;1;1;{'couple': 1}
+acute;1;1;{'sharp': 1}
+dedicate;1;1;{'give': 1}
+sections;1;1;{'kinds': 1}
+moment;1;1;{'thing': 1}
+middle;1;1;{'central': 1}
+accidents;1;1;{'incidents': 1}
+aspect;1;1;{'reason': 1}
+inventors;1;1;{'creators': 1}
+May;1;1;{'Might': 1}
+smooth;1;1;{'calm': 1}
+miss;1;1;{'leave': 1}
+flight;1;1;{'travel': 1}
+characterized;1;1;{'indicated': 1}
+unsuitable;1;1;{'different': 1}
+damaged;1;1;{'attracted': 1}
+mere;1;1;{'bare': 1}
+studios;1;1;{'classes': 1}
+blocked;1;1;{'closed': 1}
+realized;1;1;{'make': 1}
+distracting;1;1;{'divesting': 1}
+bear;1;1;{'suffer': 1}
+upbringing;1;1;{'nursing': 1}
+insomnia;1;1;{'sleepless': 1}
+condition;1;1;{'statement': 1}
+climates;1;1;{'temperatures': 1}
+imposed;1;1;{'created': 1}
+Namely;1;1;{'Certainly': 1}
+specialization;1;1;{'subject': 1}
+traits;1;1;{'treats': 1}
+double;1;1;{'twofold': 1}
+reckon;1;1;{'regard': 1}
+ill;1;1;{'illness': 1}
+describing;1;1;{'with': 1}
+meeting;1;1;{'including': 1}
+levelling;1;1;{'stagnation': 1}
+organising;1;1;{'doing': 1}
+stagnation;1;1;{'balance': 1}
+overcomes;1;1;{'breaks': 1}
+recommend;1;1;{'advise': 1}
+monitored;1;1;{'governed': 1}
+risks;1;1;{'dangers': 1}
+longest;1;1;{'largest': 1}
+ideal;1;1;{'idealistic': 1}
+deny;1;1;{'refuse': 1}
+Industrial;1;1;{'Industry': 1}
+items;1;1;{'things': 1}
+integrate;1;1;{'know': 1}
+supplies;1;1;{'resources': 1}
+supported;1;1;{'put': 1}
+excessive;1;1;{'useless': 1}
+producer;1;1;{'customer': 1}
+restore;1;1;{'return': 1}
+damaging;1;1;{'determination': 1}
+final;1;1;{'total': 1}
+refuses;1;1;{'denies': 1}
+balanced;1;1;{'correct': 1}
+w;1;1;{'units': 1}
+key;1;1;{'big': 1}
+territories;1;1;{'countries': 1}
+constructions;1;1;{'structures': 1}
+soil;1;1;{'ground': 1}
+sorted;1;1;{'separated': 1}
+relocation;1;1;{'commuting': 1}
+wavy;1;1;{'vulnerable': 1}
+escape;1;1;{'chase': 1}
+reasoned;1;1;{'clear': 1}
+affinity;1;1;{'trend': 1}
+topical;1;1;{'actual': 1}
+turnover;1;1;{'amount': 1}
+weakens;1;1;{'break': 1}
+husbands;1;1;{'men': 1}
+perish;1;1;{'spoil': 1}
+trusted;1;1;{'approved': 1}
+shaped;1;1;{'made': 1}
+protective;1;1;{'defiance': 1}
+impede;1;1;{'block': 1}
+composed;1;1;{'consist': 1}
+switching;1;1;{'moving': 1}
+prize;1;1;{'price': 1}
+couple;1;1;{'pair': 1}
+artwork;1;1;{'creativity': 1}
+assumed;1;1;{'suggested': 1}
+disrupted;1;1;{'violated': 1}
+infamous;1;1;{'famous': 1}
+forming;1;1;{'being': 1}
+accelerates;1;1;{'engines': 1}
+basics;1;1;{'basis': 1}
+overly;1;1;{'too': 1}
+uniform;1;1;{'equal': 1}
+bunch;1;1;{'bond': 1}
+motion;1;1;{'point': 1}
+allotted;1;1;{'squandered': 1}
+scrolling;1;1;{'seeing': 1}
+surge;1;1;{'jump': 1}
+defence;1;1;{'protection': 1}
+exceptionally;1;1;{'really': 1}
+justly;1;1;{'honest': 1}
+suburbs;1;1;{'periphery': 1}
+Cathedral;1;1;{'Temple': 1}
+superior;1;1;{'prevailing': 1}
+releases;1;1;{'trade': 1}
+Combining;1;1;{'Selecting': 1}
+certificates;1;1;{'card': 1}
+execute;1;1;{'kill': 1}
+lock;1;1;{'set': 1}
+leaps;1;1;{'jumps': 1}
+autonomous;1;1;{'regardless': 1}
+spikes;1;1;{'jumps': 1}
+prioritize;1;1;{'choose': 1}
+false;1;1;{'unfair': 1}
+combines;1;1;{'exists': 1}
+telephones;1;1;{'cells': 1}
+thrive;1;1;{'strive': 1}
+operate;1;1;{'hold': 1}
+nurture;1;1;{'mature': 1}
+swapped;1;1;{'exchanged': 1}
+Very;1;1;{'Too': 1}
+suppresses;1;1;{'take': 1}
+locate;1;1;{'establish': 1}
+applies;1;1;{'is': 1}
+affiliated;1;1;{'daughter': 1}
+thereafter;1;1;{'then': 1}
+gymnastics;1;1;{'gymnastic': 1}
+violation;1;1;{'breakers': 1}
+alleviated;1;1;{'improved': 1}
+joint;1;1;{'joining': 1}
+transformed;1;1;{'disposed': 1}
+legs;1;1;{'feet': 1}
+popularizing;1;1;{'populating': 1}
+respective;1;1;{'same': 1}
+ride;1;1;{'road': 1}
+bands;1;1;{'group': 1}
+Following;1;1;{'In': 1}
+cleared;1;1;{'cleaned': 1}
+notify;1;1;{'note': 1}
+dvd;1;1;{'film': 1}
+capacity;1;1;{'fertility': 1}
+listed;1;1;{'given': 1}
+restoration;1;1;{'redecoration': 1}
+launch;1;1;{'start': 1}
+cites;1;1;{'claims': 1}
+loud;1;1;{'high': 1}
+obscure;1;1;{'absent': 1}
+breach;1;1;{'reduce': 1}
+dissemination;1;1;{'sharing': 1}
+respond;1;1;{'relates': 1}
+carefree;1;1;{'care': 1}
+tagged;1;1;{'titled': 1}
+outcome;1;1;{'way': 1}
+prior;1;1;{'previous': 1}
+security;1;1;{'safety': 1}
+running;1;1;{'holding': 1}
+vested;1;1;{'vest': 1}
+enroll;1;1;{'enter': 1}
+entail;1;1;{'possess': 1}
+probable;1;1;{'possible': 1}
+essence;1;1;{'addition': 1}
+assure;1;1;{'ensure': 1}
+cattle;1;1;{'beast': 1}
+hideous;1;1;{'wars': 1}
+cyclical;1;1;{'cyclic': 1}
+cereal;1;1;{'bread': 1}
+inspect;1;1;{'moderate': 1}
+nuclear;1;1;{'atomic': 1}
+realization;1;1;{'translation': 1}
+augmentation;1;1;{'widening': 1}
+headmasters;1;1;{'chiefs': 1}
+encounter;1;1;{'meet': 1}
+layout;1;1;{'outlay': 1}
+nutrition;1;1;{'food': 1}
+kid;1;1;{'young': 1}
+minimized;1;1;{'saved': 1}
+date;1;1;{'data': 1}
+appeals;1;1;{'applies': 1}
+entirety;1;1;{'all': 1}
+solely;1;1;{'only': 1}
+persecuted;1;1;{'punished': 1}
+recruitment;1;1;{'employ': 1}
+gratefully;1;1;{'thankfully': 1}
+grasp;1;1;{'explain': 1}
+recap;1;1;{'resume': 1}
+owner;1;1;{'keeper': 1}
+immature;1;1;{'small': 1}
+recordings;1;1;{'records': 1}
+professor;1;1;{'tutor': 1}
+reject;1;1;{'reflect': 1}
+domains;1;1;{'deals': 1}
+ladder;1;1;{'stairs': 1}
+blocks;1;1;{'quarters': 1}
+inverse;1;1;{'backward': 1}
+creators;1;1;{'producers': 1}
+integral;1;1;{'inseparable': 1}
+hinder;1;1;{'destroy': 1}
+spoil;1;1;{'injure': 1}
+riches;1;1;{'qualities': 1}
+branch;1;1;{'filial': 1}
+unaware;1;1;{'unconscious': 1}
+operation;1;1;{'function': 1}
+cruel;1;1;{'crucial': 1}
+straight;1;1;{'strict': 1}
+Drug;1;1;{'Doping': 1}
+mature;1;1;{'adult': 1}
+parties;1;1;{'hand': 1}
+usability;1;1;{'serve': 1}
+definitions;1;1;{'determinations': 1}
+reads;1;1;{'put': 1}
+gloomy;1;1;{'ugly': 1}
+showcasing;1;1;{'showing': 1}
+equalling;1;1;{'having': 1}
+violate;1;1;{'break': 1}
+head;1;1;{'president': 1}
+thick;1;1;{'fat': 1}
+peculiarity;1;1;{'specification': 1}
+immigrants;1;1;{'emigrants': 1}
+eliminating;1;1;{'reducing': 1}
+prevented;1;1;{'cancelled': 1}
+reflecting;1;1;{'facing': 1}
+directions;1;1;{'sides': 1}
+enjoyed;1;1;{'occupied': 1}
+violent;1;1;{'vigilant': 1}
+perceptions;1;1;{'understandings': 1}
+deliveries;1;1;{'delays': 1}
+dumped;1;1;{'left': 1}
+assumption;1;1;{'proposal': 1}
+barely;1;1;{'slightly': 1}
+stem;1;1;{'decrease': 1}
+thoroughly;1;1;{'rarely': 1}
+static;1;1;{'statistic': 1}
+appreciated;1;1;{'estimated': 1}
+diet;1;1;{'ration': 1}
+brink;1;1;{'merge': 1}
+discs;1;1;{'songs': 1}
+expose;1;1;{'exposure': 1}
+pushes;1;1;{'stimulates': 1}
+movements;1;1;{'destinations': 1}
+allocate;1;1;{'permit': 1}
+defeat;1;1;{'destroy': 1}
+arrest;1;1;{'find': 1}
+down;1;1;{'up': 1}
+white;1;1;{'general': 1}
+globally;1;1;{'worldwide': 1}
+outperformed;1;1;{'outnumbered': 1}
+staring;1;1;{'watching': 1}
+achievement;1;1;{'destination': 1}
+bills;1;1;{'fees': 1}
+heavy;1;1;{'hard': 1}
+emitted;1;1;{'produced': 1}
+wishes;1;1;{'wants': 1}
+ground;1;1;{'earth': 1}
+transnational;1;1;{'trans': 1}
+sights;1;1;{'sightseeing': 1}
+malls;1;1;{'markets': 1}
+guidance;1;1;{'relationship': 1}
+ear;1;1;{'mind': 1}
+acknowledge;1;1;{'state': 1}
+insist;1;1;{'persist': 1}
+direct;1;1;{'take': 1}
+depressed;1;1;{'gross': 1}
+shooting;1;1;{'recording': 1}
+violet;1;1;{'vigilant': 1}
+emerge;1;1;{'have': 1}
+size;1;1;{'high': 1}
+secondary;1;1;{'side': 1}
+sophisticated;1;1;{'complicated': 1}
+elected;1;1;{'voted': 1}
+abuse;1;1;{'pressure': 1}
+explicit;1;1;{'suggest': 1}
+dissolve;1;1;{'disband': 1}
+presence;1;1;{'profits': 1}
+wearing;1;1;{'have': 1}
+Afterward;1;1;{'When': 1}
+deprive;1;1;{'decline': 1}
+Police;1;1;{'Policy': 1}
+electric;1;1;{'electronic': 1}
+police;1;1;{'policy': 1}
+submit;1;1;{'give': 1}
+admits;1;1;{'accepts': 1}
+undertaken;1;1;{'conducted': 1}
+undergo;1;1;{'represent': 1}
+amiss;1;1;{'incompetent': 1}
+devise;1;1;{'research': 1}
+dweller;1;1;{'liver': 1}
+specify;1;1;{'realise': 1}
+pain;1;1;{'sick': 1}
+denies;1;1;{'refuses': 1}
+biases;1;1;{'preferences': 1}
+estimated;1;1;{'was': 1}
+unfounded;1;1;{'invalid': 1}
+formation;1;1;{'building': 1}
+forever;1;1;{'permanently': 1}
+offensive;1;1;{'offending': 1}
+uphold;1;1;{'save': 1}
+shoots;1;1;{'take': 1}
+luck;1;1;{'fortune': 1}
+adapting;1;1;{'adopting': 1}
+divert;1;1;{'grab': 1}
+Hence;1;1;{'Subsequently': 1}
+culprits;1;1;{'criminals': 1}
+lows;1;1;{'thoughts': 1}
+contaminated;1;1;{'mess': 1}
+evolve;1;1;{'developing': 1}
+endurance;1;1;{'stamina': 1}
+housing;1;1;{'home': 1}
+researched;1;1;{'investigated': 1}
+measurement;1;1;{'rate': 1}
+grant;1;1;{'give': 1}
+predicted;1;1;{'forecasted': 1}
+curbed;1;1;{'reduced': 1}
+fruitful;1;1;{'thankful': 1}
+tighten;1;1;{'strict': 1}
+preserved;1;1;{'saved': 1}
+arrives;1;1;{'move': 1}
+screens;1;1;{'screenplays': 1}
+ready;1;1;{'able': 1}
+distress;1;1;{'grieve': 1}
+terrace;1;1;{'tribune': 1}
+distribute;1;1;{'diffuse': 1}
+font;1;1;{'text': 1}
+Along;1;1;{'Among': 1}
+spans;1;1;{'rallies': 1}
+sustained;1;1;{'sustainable': 1}
+domestically;1;1;{'country': 1}
+objects;1;1;{'subjects': 1}
+row;1;1;{'raw': 1}
+cancel;1;1;{'abandon': 1}
+promise;1;1;{'are': 1}
+capability;1;1;{'possibility': 1}
+evaluated;1;1;{'measured': 1}
+realisation;1;1;{'relation': 1}
+attested;1;1;{'noticed': 1}
+mayor;1;1;{'head': 1}
+begun;1;1;{'become': 1}
+imported;1;1;{'exporting': 1}
+sets;1;1;{'backgrounds': 1}
+changeable;1;1;{'rapid': 1}
+happens;1;1;{'is': 1}
+losses;1;1;{'costs': 1}
+affordable;1;1;{'acceptable': 1}
+responsible;1;1;{'reasonable': 1}
+positions;1;1;{'stage': 1}
+evident;1;1;{'visibly': 1}
+Watching;1;1;{'Seeing': 1}
+must;1;1;{'should': 1}
+markets;1;1;{'companies': 1}
+selling;1;1;{'sharing': 1}
+Also;1;1;{'Then': 1}
+declines;1;1;{'drop': 1}
+discussed;1;1;{'debated': 1}
+risen;1;1;{'raised': 1}
+trouble;1;1;{'troubled': 1}
+authorities;1;1;{'government': 1}
+downward;1;1;{'negative': 1}
+manufacturers;1;1;{'creators': 1}
+improvement;1;1;{'deal': 1}
+billions;1;1;{'billiards': 1}
+before;1;1;{'earlier': 1}
+achievements;1;1;{'results': 1}
+opposite;1;1;{'contrast': 1}
+fact;1;1;{'data': 1}
+motivation;1;1;{'pusher': 1}
+sure;1;1;{'confident': 1}
+contains;1;1;{'considers': 1}
+compete;1;1;{'race': 1}
+falls;1;1;{'falling': 1}
+affects;1;1;{'reflects': 1}
+energy;1;1;{'power': 1}
+features;1;1;{'information': 1}
+transporting;1;1;{'bringing': 1}
+Nowadays;1;1;{'Now': 1}
+contain;1;1;{'includes': 1}
+aspects;1;1;{'opportunities': 1}
+places;1;1;{'positions': 1}
+convinced;1;1;{'convicted': 1}
+fans;1;1;{'lovers': 1}
+professions;1;1;{'works': 1}
+laws;1;1;{'rules': 1}
+taking;1;1;{'from': 1}
+sometimes;1;1;{'something': 1}
+varied;1;1;{'fluctuated': 1}
+understanding;1;1;{'meanings': 1}
+taught;1;1;{'studied': 1}
+mean;1;1;{'source': 1}
+mentioned;1;1;{'included': 1}
+tobacco;1;1;{'smoking': 1}
+thinking;1;1;{'mind': 1}
+further;1;1;{'next': 1}
+personal;1;1;{'Personally': 1}
+careers;1;1;{'paths': 1}
+best;1;1;{'most': 1}
+popularity;1;1;{'property': 1}
+suggest;1;1;{'say': 1}
+involves;1;1;{'reaches': 1}
+useless;1;1;{'irrelevant': 1}
+organisations;1;1;{'service': 1}
+upward;1;1;{'growth': 1}
+differently;1;1;{'oppositely': 1}
+appropriate;1;1;{'propriety': 1}
+everybody;1;1;{'all': 1}
+consumption;1;1;{'meal': 1}
+exceptions;1;1;{'excludes': 1}
+abilities;1;1;{'conditions': 1}
+views;1;1;{'look': 1}
+tells;1;1;{'say': 1}
+practical;1;1;{'serving': 1}
+growing;1;1;{'broadening': 1}
+movies;1;1;{'clips': 1}
+finding;1;1;{'searching': 1}
+remaining;1;1;{'ending': 1}
+case;1;1;{'fact': 1}
+succeed;1;1;{'success': 1}
+extent;1;1;{'amount': 1}
+stays;1;1;{'located': 1}
+personally;1;1;{'myself': 1}
+space;1;1;{'cosmos': 1}
+What;1;1;{'that': 1}
+caused;1;1;{'called': 1}
+sharp;1;1;{'flexed': 1}
+sources;1;1;{'settings': 1}
+prison;1;1;{'jail': 1}
+issues;1;1;{'questions': 1}
+close;1;1;{'near': 1}
+fluctuate;1;1;{'differs': 1}
+attendance;1;1;{'appearance': 1}
+worse;1;1;{'less': 1}
+pleasure;1;1;{'enjoy': 1}
+minimum;1;1;{'maximum': 1}
+reducing;1;1;{'lowering': 1}
+shops;1;1;{'magazine': 1}
+rest;1;1;{'others': 1}
+matter;1;1;{'depend': 1}
+olds;1;1;{'people': 1}
+saw;1;1;{'have': 1}
+relatives;1;1;{'siblings': 1}
+pirate;1;1;{'free': 1}
+practise;1;1;{'provide': 1}
+end;1;1;{'result': 1}
+incomes;1;1;{'amounts': 1}
+indicators;1;1;{'rates': 1}
+overall;1;1;{'all': 1}
+purposes;1;1;{'aims': 1}
+differs;1;1;{'varies': 1}
+forms;1;1;{'types': 1}
+present;1;1;{'show': 1}
+Obviously;1;1;{'Clearly': 1}
+subjects;1;1;{'objects': 1}
+differ;1;1;{'varied': 1}
+necessity;1;1;{'necessary': 1}
+salaries;1;1;{'price': 1}
+temperature;1;1;{'degree': 1}
+buy;1;1;{'consume': 1}
+chemicals;1;1;{'chemistry': 1}
+Moreover;1;1;{'Next': 1}
+steadily;1;1;{'stable': 1}
+nowadays;1;1;{'today': 1}
+towards;1;1;{'toward': 1}
+amounts;1;1;{'is': 1}
+provides;1;1;{'makes': 1}
+expensive;1;1;{'wasteful': 1}
+disagree;1;1;{'dispute': 1}
+Although;1;1;{'Through': 1}
+course;1;1;{'direction': 1}
+group;1;1;{'profile': 1}
+effects;1;1;{'outcomes': 1}
+illegal;1;1;{'outlawed': 1}
+company;1;1;{'group': 1}
+profits;1;1;{'shares': 1}
+entertainment;1;1;{'fun': 1}
+goes;1;1;{'does': 1}
+leisure;1;1;{'relaxing': 1}
+history;1;1;{'life': 1}
+controversial;1;1;{'discussed': 1}
+transferred;1;1;{'transited': 1}
+sector;1;1;{'job': 1}
+being;1;1;{'of': 1}
+phones;1;1;{'game': 1}
+wants;1;1;{'would': 1}
+government;1;1;{'authority': 1}
+lives;1;1;{'beings': 1}
+spend;1;1;{'use': 1}
+In;1;1;{'And': 1}
+products;1;1;{'information': 1}
+watching;1;1;{'speculating': 1}
+education;1;1;{'diploma': 1}
+noticeable;1;1;{'feasible': 1}
+useful;1;1;{'true': 1}
+differences;1;1;{'changes': 1}
+girls;1;1;{'women': 1}
+brands;1;1;{'labels': 1}
+ages;1;1;{'years': 1}
+disappearance;1;1;{'decline': 1}
+graph;1;1;{'line': 1}
+poor;1;1;{'adverse': 1}
+tv;1;1;{'television': 1}
+understand;1;1;{'realise': 1}
+first;1;1;{'most': 1}
+benefits;1;1;{'positives': 1}
+grew;1;1;{'raised': 1}
+films;1;1;{'cinema': 1}
+Overall;1;1;{'Overview': 1}
+paid;1;1;{'spent': 1}
+situations;1;1;{'times': 1}
+existence;1;1;{'remaining': 1}
+prevalence;1;1;{'dominating': 1}
+success;1;1;{'fortune': 1}
+depend;1;1;{'tell': 1}
+teenagers;1;1;{'children': 1}
+produces;1;1;{'gives': 1}
+exist;1;1;{'be': 1}
+accessible;1;1;{'acceptable': 1}
+climate;1;1;{'nature': 1}
+dangerous;1;1;{'awful': 1}
+includes;1;1;{'contains': 1}
+discuss;1;1;{'argue': 1}
+steady;1;1;{'monotonous': 1}
+conclude;1;1;{'consider': 1}
+variety;1;1;{'arrange': 1}
+consists;1;1;{'is': 1}
+against;1;1;{'versus': 1}
+bring;1;1;{'out': 1}
+responsibility;1;1;{'order': 1}
+rates;1;1;{'scores': 1}
+may;1;1;{'might': 1}
+lifestyle;1;1;{'life': 1}
+thinks;1;1;{'consider': 1}
+lack;1;1;{'miss': 1}
+impossible;1;1;{'unreliable': 1}
+difficulties;1;1;{'troubles': 1}
+lot;1;1;{'land': 1}
+drawbacks;1;1;{'downgrades': 1}
+uses;1;1;{'deploy': 1}
+gadgets;1;1;{'tools': 1}
+considered;1;1;{'claimed': 1}
+clear;1;1;{'set': 1}
+delivered;1;1;{'provided': 1}
+took;1;1;{'placed': 1}
+categories;1;1;{'parts': 1}
+trends;1;1;{'actions': 1}
+decision;1;1;{'way': 1}
+know;1;1;{'realize': 1}
+unnecessary;1;1;{'clear': 1}
+employed;1;1;{'working': 1}
+phenomenon;1;1;{'aspect': 1}
+degrees;1;1;{'points': 1}
+service;1;1;{'serves': 1}
+decide;1;1;{'concrete': 1}
+experiences;1;1;{'have': 1}
+reduced;1;1;{'fall': 1}
+results;1;1;{'effects': 1}
+family;1;1;{'this': 1}
+media;1;1;{'websites': 1}
+building;1;1;{'heaving': 1}
+cheaper;1;1;{'less': 1}
+occurred;1;1;{'happened': 1}
+employment;1;1;{'workers': 1}
+diagram;1;1;{'picture': 1}
+sense;1;1;{'point': 1}
+mostly;1;1;{'majority': 1}
+shares;1;1;{'amount': 1}
+creation;1;1;{'mind': 1}
+offered;1;1;{'availed': 1}
+approaches;1;1;{'advances': 1}
+land;1;1;{'earth': 1}
+More;1;1;{'Very': 1}
+Speaking;1;1;{'Talking': 1}
+manage;1;1;{'make': 1}
+reflects;1;1;{'had': 1}
+discover;1;1;{'know': 1}
+background;1;1;{'base': 1}
+peculiarities;1;1;{'specification': 1}
+depicts;1;1;{'pictures': 1}
+meals;1;1;{'dishes': 1}
+measure;1;1;{'quantity': 1}
+directors;1;1;{'chiefs': 1}
+movement;1;1;{'discourse': 1}
+add;1;1;{'bring': 1}
+attracts;1;1;{'requires': 1}
+stronger;1;1;{'bigger': 1}
+considerable;1;1;{'efficient': 1}
+cuisine;1;1;{'kitchen': 1}
+staying;1;1;{'doing': 1}
+Talking;1;1;{'Stealing': 1}
+unchanged;1;1;{'constantly': 1}
+extraordinary;1;1;{'outstanding': 1}
+units;1;1;{'unions': 1}
+attempts;1;1;{'efforts': 1}
+conflicts;1;1;{'misunderstanding': 1}
+reliable;1;1;{'safety': 1}
+actors;1;1;{'artists': 1}
+minimal;1;1;{'minute': 1}
+appeared;1;1;{'became': 1}
+imagine;1;1;{'mind': 1}
+efficiently;1;1;{'effective': 1}
+turn;1;1;{'attend': 1}
+diverse;1;1;{'complex': 1}
+involving;1;1;{'like': 1}
+willing;1;1;{'desiring': 1}
+excluding;1;1;{'without': 1}
+child;1;1;{'young': 1}
+participants;1;1;{'contestants': 1}
+patterns;1;1;{'opposite': 1}
+opened;1;1;{'founded': 1}
+distance;1;1;{'stopping': 1}
+locals;1;1;{'tribesmen': 1}
+peaks;1;1;{'tops': 1}
+tools;1;1;{'ways': 1}
+gone;1;1;{'reduced': 1}
+importing;1;1;{'abroad': 1}
+contemporary;1;1;{'current': 1}
+considering;1;1;{'taking': 1}
+polluting;1;1;{'wasting': 1}
+destroyed;1;1;{'ruined': 1}
+conduct;1;1;{'lead': 1}
+brain;1;1;{'mental': 1}
+refuse;1;1;{'decline': 1}
+studied;1;1;{'explored': 1}
+creative;1;1;{'artistic': 1}
+lifetime;1;1;{'way': 1}
+expand;1;1;{'increase': 1}
+phone;1;1;{'telephone': 1}
+sight;1;1;{'look': 1}
+eliminate;1;1;{'exterminate': 1}
+concern;1;1;{'function': 1}
+pass;1;1;{'make': 1}
+bankruptcy;1;1;{'ruin': 1}
+return;1;1;{'recover': 1}
+spectator;1;1;{'beholder': 1}
+wherever;1;1;{'whenever': 1}
+released;1;1;{'launched': 1}
+severe;1;1;{'hard': 1}
+path;1;1;{'road': 1}
+holds;1;1;{'remains': 1}
+threatening;1;1;{'dangerous': 1}
+room;1;1;{'place': 1}
+projects;1;1;{'activities': 1}
+convince;1;1;{'assure': 1}
+cinematography;1;1;{'movies': 1}
+weather;1;1;{'climate': 1}
+teaching;1;1;{'learning': 1}
+construction;1;1;{'production': 1}
+serving;1;1;{'ask': 1}
+alternatives;1;1;{'substitutes': 1}
+homes;1;1;{'shelters': 1}
+campaign;1;1;{'company': 1}
+outnumber;1;1;{'overcome': 1}
+Unlike;1;1;{'Instead': 1}
+imprisonment;1;1;{'time': 1}
+quarters;1;1;{'fourth': 1}
+obligatory;1;1;{'inevitable': 1}
+teaches;1;1;{'learns': 1}
+perspective;1;1;{'sight': 1}
+introducing;1;1;{'making': 1}
+habit;1;1;{'habitat': 1}
+northern;1;1;{'North': 1}
+routes;1;1;{'distances': 1}
+household;1;1;{'home': 1}
+specific;1;1;{'concrete': 1}
+eliminated;1;1;{'removed': 1}
+recently;1;1;{'newly': 1}
+applicants;1;1;{'alumni': 1}
+sensitive;1;1;{'sensible': 1}
+perform;1;1;{'comply': 1}
+six;1;1;{'few': 1}
+per;1;1;{'each': 1}
+illustration;1;1;{'case': 1}
+option;1;1;{'variant': 1}
+Over;1;1;{'For': 1}
+Such;1;1;{'This': 1}
+introduced;1;1;{'performed': 1}
+force;1;1;{'enforce': 1}
+convenience;1;1;{'facility': 1}
+looking;1;1;{'searching': 1}
+consisted;1;1;{'consistent': 1}
+consuming;1;1;{'taking': 1}
+rapid;1;1;{'sweeping': 1}
+effective;1;1;{'true': 1}
+keeps;1;1;{'harbours': 1}
+piece;1;1;{'creation': 1}
+gap;1;1;{'lack': 1}
+described;1;1;{'explained': 1}
+supporting;1;1;{'with': 1}
+proved;1;1;{'showed': 1}
+believes;1;1;{'consider': 1}
+analyze;1;1;{'know': 1}
+numerous;1;1;{'more': 1}
+division;1;1;{'share': 1}
+attract;1;1;{'appeal': 1}
+importance;1;1;{'meaning': 1}
+unacceptable;1;1;{'unaffordable': 1}
+impact;1;1;{'effort': 1}
+replace;1;1;{'substitute': 1}
+restriction;1;1;{'permission': 1}
+controlled;1;1;{'banished': 1}
+thanks;1;1;{'Due': 1}
+column;1;1;{'graph': 1}
+emphasize;1;1;{'remember': 1}
+outdoors;1;1;{'outside': 1}
+wealth;1;1;{'rich': 1}
+appealing;1;1;{'attractive': 1}
+concerned;1;1;{'regarded': 1}
+market;1;1;{'niche': 1}
+came;1;1;{'emigrated': 1}
+gradual;1;1;{'slow': 1}
+preference;1;1;{'premier': 1}
+aesthetic;1;1;{'aesthetics': 1}
+institutions;1;1;{'departments': 1}
+Eastern;1;1;{'East': 1}
+easy;1;1;{'clear': 1}
+thoughts;1;1;{'opinion': 1}
+restrictions;1;1;{'stops': 1}
+destruction;1;1;{'reduction': 1}
+exceeded;1;1;{'overstepped': 1}
+private;1;1;{'intellectual': 1}
+generally;1;1;{'commonly': 1}
+danger;1;1;{'threat': 1}
+born;1;1;{'burn': 1}
+reaching;1;1;{'rising': 1}
+Despite;1;1;{'While': 1}
+found;1;1;{'spotted': 1}
+addressed;1;1;{'solved': 1}
+continues;1;1;{'remain': 1}
+disadvantage;1;1;{'disability': 1}
+ability;1;1;{'skills': 1}
+created;1;1;{'made': 1}
+out;1;1;{'outside': 1}
+exceeds;1;1;{'excels': 1}
+graduates;1;1;{'gender': 1}
+destroy;1;1;{'evict': 1}
+appreciate;1;1;{'estimate': 1}
+reflect;1;1;{'influence': 1}
+rarely;1;1;{'poorly': 1}
+far;1;1;{'wide': 1}
+accessibility;1;1;{'available': 1}
+face;1;1;{'have': 1}
+line;1;1;{'count': 1}
+departments;1;1;{'faculties': 1}
+questions;1;1;{'businesses': 1}
+destroying;1;1;{'breaking': 1}
+prohibited;1;1;{'abandoned': 1}
+degree;1;1;{'level': 1}
+columns;1;1;{'graphs': 1}
+weak;1;1;{'poor': 1}
+forces;1;1;{'provide': 1}
+materials;1;1;{'nature': 1}
+looks;1;1;{'comes': 1}
+noticed;1;1;{'seen': 1}
+doctors;1;1;{'medics': 1}
+pressure;1;1;{'violence': 1}
+accounting;1;1;{'allocating': 1}
+simply;1;1;{'just': 1}
+complicated;1;1;{'perplexed': 1}
+vary;1;1;{'change': 1}
+visible;1;1;{'seen': 1}
+destructive;1;1;{'destroyed': 1}
+criminal;1;1;{'outlaw': 1}
+gained;1;1;{'excluded': 1}
+contrary;1;1;{'opposite': 1}
+territory;1;1;{'government': 1}
+characters;1;1;{'heros': 1}
+cars;1;1;{'autos': 1}
+goals;1;1;{'aims': 1}
+perceive;1;1;{'realize': 1}
+community;1;1;{'humanity': 1}
+stores;1;1;{'shops': 1}
+put;1;1;{'have': 1}
+competitors;1;1;{'competition': 1}
+otherwise;1;1;{'thus': 1}
+speech;1;1;{'words': 1}
+salary;1;1;{'payment': 1}
+faster;1;1;{'often': 1}
+drops;1;1;{'plunges': 1}
+drinking;1;1;{'still': 1}
+industrial;1;1;{'manufacture': 1}
+focus;1;1;{'lead': 1}
+struggle;1;1;{'fights': 1}
+roads;1;1;{'rides': 1}
+facilities;1;1;{'objects': 1}
+demographic;1;1;{'social': 1}
+followed;1;1;{'replaced': 1}
+identify;1;1;{'indicate': 1}
+unknown;1;1;{'infamous': 1}
+browsing;1;1;{'seeing': 1}
