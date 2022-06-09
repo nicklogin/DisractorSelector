@@ -66,7 +66,7 @@ word2vec = KeyedVectors.load_word2vec_format(
 )
 bert = BertEmbedder("bert-base-cased")
 variants = pd.read_csv(
-    "variants.csv", sep=';', index_col="Unnamed: 0"
+    "variants_clear_sorted.csv", sep=';', index_col="Unnamed: 0"
 )
 variants["variants"] = variants["variants"].apply(
     literal_eval

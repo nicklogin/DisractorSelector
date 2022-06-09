@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 import re
+import os
 
 from typing import List
 from collections import defaultdict
@@ -10,7 +11,11 @@ from nltk import word_tokenize
 from string import punctuation
 from gensim.models import KeyedVectors
 
+from distractor_generator.utils import download_word2vec_model
+
 # Load data resources:
+if not os.path.exists("gensim_models/skipgram_wikipedia_no_lemma"):
+    download_word2vec_model()
 word2vec = KeyedVectors.load_word2vec_format(
     "gensim_models/skipgram_wikipedia_no_lemma/model.txt"
 )
