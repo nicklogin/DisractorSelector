@@ -1,61 +1,14 @@
-import re
 import pandas as pd
-import numpy as np
-import torch as tt
-import scipy.spatial
-import csv
-import json
-import os
-import nltk
+
 import json
 
-from typing import List, Tuple, Union, Dict, Any
+from typing import List, Dict, Any
 
-from transformers import BertTokenizer, BertModel
 from ast import literal_eval
-from tqdm import tqdm_notebook
-
 from gensim.models import KeyedVectors
 from collections import defaultdict
 
-
-class BertEmbedder:
-    def __init__(self, model_name: str):
-        self.model = BertModel.from_pretrained(model_name)
-        self.tokenizer = BertTokenizer.from_pretrained(model_name)
-
-    def _process_data(self, data: Union[str, List[str]]) -> tt.Tensor:
-        tokenized = self.tokenizer(data, return_tensors="pt")
-        with tt.no_grad():
-            output = self.model(**tokenized)
-        h = output.last_hidden_state
-        return h, tokenized
-
-    def embed_sentence(self, sent: str) -> List[float]:
-        h, _ = self._process_data(sent)
-        h_mean = h[0].mean(axis=0).numpy().tolist()
-        return h_mean
-
-    def embed_mask_token(self, sent: str) -> List[float]:
-        h, tokenized = self._process_data(sent)
-        h, tokenized = h[0], tokenized["input_ids"][0]
-        mask_index = tokenized.numpy().tolist().index(
-            self.tokenizer.mask_token_id
-        )
-        mask_embedding = h[mask_index].numpy().tolist()
-        return mask_embedding
-
-    def embed_tokens(self, sent: str) -> List[Tuple[str, float]]:
-        h, tokenized = self._process_data(sent)
-        h, tokenized = h[0], tokenized["input_ids"][0]
-        tokens = self.tokenizer.convert_ids_to_tokens(tokenized)
-
-        output = []
-
-        for token, vector in zip(tokens, h):
-            output.append((token, vector.numpy().tolist()))
-
-        return output
+from distractor_generator.bert_embedder import BertEmbedder
 
 
 with open("freqdict.json", 'r', encoding='utf-8') as inp:
@@ -120,5 +73,75 @@ def process_entry(
         # freq_err_corp
         output_dict["freq_err_corp"] = freqdict[distractor]
         output_dicts.append(output_dict)
+
+    return output_dicts
+
+
+def batch_process_entries(
+    masked_sents: List[str],
+    right_answers: List[str],
+    distractor_lists: List[List[str]],
+    sent_ids: List[int] = None
+):
+    if sent_ids is None:
+        sent_ids = list(range(len(masked_sents)))
+    output_dicts = []
+
+    bert_masked_sents = bert.batch_embed_mask_tokens(masked_sents)
+    bert_sents = bert.batch_embed_sentences(
+        [
+            sent.replace(
+                "[MASK]", right_answer
+            ) for sent, right_answer in zip(
+                masked_sents, right_answers
+            )
+        ]
+    )
+
+    raise Exception
+
+    for sent_id, bert_masked, bert_sent, right_answer, distractors in zip(
+        sent_ids,
+        bert_masked_sents,
+        bert_sents,
+        right_answers,
+        distractor_lists
+    ):
+        wvc = word2vec[right_answer]
+
+        try:
+            freq_corr = variants.loc[right_answer]["Count"]
+        except KeyError:
+            freq_corr = freqdict[right_answer]
+
+        freq_corr_corp = 1
+
+        for distractor in distractors:
+            output_dict = {
+                "sent_id": sent_id,
+                "variant": distractor,
+                "freq_corr": freq_corr,
+                "freq_corr_corp": freq_corr_corp,
+            }
+            for i in range(len(wvc)):
+                output_dict[f"wvc_{i}"] = wvc[i]
+            for i in range(len(bert_masked)):
+                output_dict[f"bm_{i}"] = bert_masked[i]
+            for i in range(len(bert_sent)):
+                output_dict[f"bs_{i}"] = bert_sent[i]
+            # wve
+            wve = word2vec[distractor]
+            for i in range(len(wve)):
+                output_dict[f"wve_{i}"] = wve[i]
+            # freq_err_corr
+            try:
+                output_dict["freq_err_corr"] = variants.loc[
+                    right_answer
+                ]["variants"][distractor]
+            except KeyError:
+                output_dict["freq_err_corr"] = 1
+            # freq_err_corp
+            output_dict["freq_err_corp"] = freqdict[distractor]
+            output_dicts.append(output_dict)
 
     return output_dicts

@@ -1,16 +1,16 @@
 import pandas as pd
-import os
 
+from distractor_generator.example_processor import batch_process_entries
 from distractor_generator.distractor_suggestor import suggest_distractors
-from distractor_generator.example_processor import process_entry
 from distractor_generator.classifier import get_clf_and_cols, classify_examples
-from distractor_generator.rank_distractors import rank_distractors
 
 from argparse import ArgumentParser
 
 if __name__ == '__main__':
     parser = ArgumentParser()
-    parser.add_argument("--filename", type=str, default="gold_standard_input.csv")
+    parser.add_argument(
+        "--filename", type=str, default="gold_standard_input.csv"
+    )
     parser.add_argument("--output_filename", type=str, default=None)
     parser.add_argument("--sep", type=str, default=";")
     parser.add_argument("--index_col", type=str, default="Unnamed: 0")
@@ -68,16 +68,15 @@ if __name__ == '__main__':
         )
     else:
         output_df = []
+        variants = []
         for idx, (sent, correction) in enumerate(zip(sents, corrections)):
-            variants = suggest_distractors(
-                sent, correction, min_candidates=args.get("n")
+            variants.append(
+                suggest_distractors(
+                    sent, correction, min_candidates=args.get("n")
+                )
             )
-            examples = process_entry(sent, correction, variants)
-            for example, variant in zip(examples, variants):
-                example["sent_id"] = idx
-                example["variant"] = variant
 
-            output_df += examples
+        output_df = batch_process_entries(sents, corrections, variants)
 
         output_df = pd.DataFrame(output_df)
         targets = classify_examples(
