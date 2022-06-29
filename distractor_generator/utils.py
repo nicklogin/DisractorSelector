@@ -1,6 +1,6 @@
-from xml.parsers.expat import model
 import requests
 import os
+import time
 
 from zipfile import ZipFile
 
@@ -28,3 +28,14 @@ def download_word2vec_model():
         file.extractall(model_dir)
     os.remove("222.zip")
     print("Downloading Word2Vec model - complete")
+
+
+def get_exec_time(f, *args, **kwargs):
+    def log_time(*args, **kwargs):
+        time_start = time.time()
+        result = f(*args, **kwargs)
+        time_end = time.time()
+        time_exec = time_end - time_start
+        print(f"function {f.__name__}, exec time {time_exec}s")
+        return result
+    return log_time

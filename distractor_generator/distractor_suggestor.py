@@ -10,6 +10,7 @@ from ast import literal_eval
 from nltk import word_tokenize
 from string import punctuation
 from gensim.models import KeyedVectors
+from distractor_generator.utils import get_exec_time
 
 from distractor_generator.utils import download_word2vec_model
 
@@ -251,7 +252,19 @@ def suggest_distractors(
     return distractors
 
 
-# print(suggest_distractors("possibilities"))
-# print(suggest_distractors("number"))
-# print(suggest_distractors("women"))
-# print(suggest_distractors("conclusion"))
+@get_exec_time
+def batch_suggest_distractors(
+    sents: List[str],
+    corrections: List[str],
+    n: int
+):
+    variants = []
+
+    for idx, (sent, correction) in enumerate(zip(sents, corrections)):
+        variants.append(
+            suggest_distractors(
+                sent, correction, min_candidates=n
+            )
+        )
+
+    return variants

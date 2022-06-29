@@ -7,6 +7,7 @@ from typing import List, Dict, Any
 from ast import literal_eval
 from gensim.models import KeyedVectors
 from collections import defaultdict
+from distractor_generator.utils import get_exec_time
 
 from distractor_generator.bert_embedder import BertEmbedder
 
@@ -77,6 +78,7 @@ def process_entry(
     return output_dicts
 
 
+@get_exec_time
 def batch_process_entries(
     masked_sents: List[str],
     right_answers: List[str],
@@ -97,8 +99,6 @@ def batch_process_entries(
             )
         ]
     )
-
-    raise Exception
 
     for sent_id, bert_masked, bert_sent, right_answer, distractors in zip(
         sent_ids,

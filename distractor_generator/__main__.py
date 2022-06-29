@@ -1,4 +1,5 @@
 import pandas as pd
+from distractor_generator.distractor_suggestor import batch_suggest_distractors
 
 from distractor_generator.example_processor import batch_process_entries
 from distractor_generator.distractor_suggestor import suggest_distractors
@@ -68,14 +69,7 @@ if __name__ == '__main__':
         )
     else:
         output_df = []
-        variants = []
-        for idx, (sent, correction) in enumerate(zip(sents, corrections)):
-            variants.append(
-                suggest_distractors(
-                    sent, correction, min_candidates=args.get("n")
-                )
-            )
-
+        variants = batch_suggest_distractors(sents, corrections, args.get('n'))
         output_df = batch_process_entries(sents, corrections, variants)
 
         output_df = pd.DataFrame(output_df)
