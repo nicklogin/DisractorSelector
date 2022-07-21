@@ -3,7 +3,6 @@ import numpy as np
 
 import re
 import os
-import json
 
 from typing import List
 from collections import defaultdict
@@ -15,16 +14,12 @@ from distractor_generator.utils import get_exec_time
 
 from distractor_generator.utils import download_word2vec_model
 
-# # Load data resources:
-# if not os.path.exists("gensim_models/skipgram_wikipedia_no_lemma"):
-#     download_word2vec_model()
-# word2vec = KeyedVectors.load_word2vec_format(
-#     "gensim_models/skipgram_wikipedia_no_lemma/model.txt"
-# )
-# word2vec.init_sims(replace=True)
-
-with open("sinonyms.json", 'r', encoding='utf8') as inp:
-    sinonyms = json.load(inp)
+# Load data resources:
+if not os.path.exists("gensim_models/skipgram_wikipedia_no_lemma"):
+    download_word2vec_model()
+word2vec = KeyedVectors.load_word2vec_format(
+    "gensim_models/skipgram_wikipedia_no_lemma/model.txt"
+)
 
 variants = pd.read_csv(
     "variants_clear_sorted.csv",
@@ -52,13 +47,6 @@ for tag in pos_dict:
                 word
             )
 pos_dict = {key: list(val) for key,val in pos_dict.items()}
-
-# word_pair_matrix = [
-#     [1 if len(set(word_dict[word1])&set(word_dict[word2]))!=0 else 0 for word2 in word_dict]
-#     for word1 in word_dict
-# ]
-# word_pair_matrix = np.array(word_pair_matrix)
-
 word_dict = defaultdict(list, word_dict)
 
 
@@ -220,20 +208,55 @@ def suggest_distractors_from_corpus(
     return distractors
 
 
-def batch_add_distractors_from_word2vec(
-    words: List[str],
-    masked_sents: List[str],
+def add_distractors_from_word2vec(
+    word: str,
+    masked_sent: str,
     distractors: List[str],
     min_candidates: int = 20
 ):
-    candidates = [
-        sinonyms[word] for word in words
-    ]
-    ## применить контекстуальные фильтры
-    pass
-    ## насколько это ускорит работу модели - 
-    ## не знаю, но надо попробовать
-    raise NotImplementedError
+    if len(distractors) > min_candidates:
+        distractors = distractors[:min_candidates]
+    elif len(distractors) < min_candidates:
+        # добираем слова до минимума из word2vec:
+        n_needed = min_candidates - len(distractors)
+
+        # слова тех же возможных частей речи:
+        pos_tags = word_dict[word]
+
+        if pos_tags:
+            candidates = [w for tag in pos_tags for w in pos_dict[tag]]
+            candidates = list(
+                set(
+                    d for d in candidates if d in word2vec.key_to_index and
+                    d not in distractors and
+                    d != word and
+                    {d, word} != {"life", "level"} and
+                    d not in punctuation
+                )
+            )
+            candidates = [
+                d for d in candidates if
+                not is_aux_verb(d) and
+                not (is_indicator_name(word) and d in ("line", "lines"))
+            ]
+
+            candidates = [
+                d for d in candidates if
+                not (is_ungradable(d) and mask_after_degree(masked_sent)) and
+                not is_context_word_copied(masked_sent, d)
+            ]
+
+            candidates = [
+                d for d in candidates if
+                not is_negation(d, word)
+            ]
+
+            order = word2vec.distances(word, candidates).argsort()
+            candidates = np.array(candidates)[order]
+            candidates = list(candidates[:n_needed])
+            distractors += candidates
+
+    return distractors
 
 
 @get_exec_time
@@ -246,13 +269,12 @@ def batch_suggest_distractors(
 
     for idx, (sent, correction) in enumerate(zip(sents, corrections)):
         distractors = suggest_distractors_from_corpus(sent, correction)
+        distractors = add_distractors_from_word2vec(
+            correction,
+            sent,
+            distractors,
+            n
+        )
         variants.append(distractors)
-
-    variants = batch_add_distractors_from_word2vec(
-        corrections,
-        sents,
-        variants,
-        n
-    )
 
     return variants
