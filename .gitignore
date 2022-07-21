@@ -1,2 +1,5 @@
 gensim_models
 disselector_env1
+env
+*.npy
+*.npz
