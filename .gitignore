@@ -3,3 +3,4 @@ disselector_env1
 env
 *.npy
 *.npz
+*.json
