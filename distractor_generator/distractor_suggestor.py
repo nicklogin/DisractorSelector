@@ -4,6 +4,7 @@ import numpy as np
 import re
 import os
 import json
+import pickle
 
 from typing import List
 from collections import defaultdict
@@ -15,16 +16,9 @@ from distractor_generator.utils import get_exec_time
 
 from distractor_generator.utils import download_word2vec_model
 
-# # Load data resources:
-# if not os.path.exists("gensim_models/skipgram_wikipedia_no_lemma"):
-#     download_word2vec_model()
-# word2vec = KeyedVectors.load_word2vec_format(
-#     "gensim_models/skipgram_wikipedia_no_lemma/model.txt"
-# )
-# word2vec.init_sims(replace=True)
 
-with open("sinonyms.json", 'r', encoding='utf8') as inp:
-    sinonyms = json.load(inp)
+with open('sinonyms_compressed.pickle', 'rb') as inp:
+    sinonyms, syn_id2word = pickle.load(inp)
 
 variants = pd.read_csv(
     "variants_clear_sorted.csv",
@@ -40,6 +34,7 @@ word_dict = pd.read_csv(
     sep=';',
     index_col="Unnamed: 0"
 )["0"].apply(literal_eval).to_dict()
+
 pos_dict = {
     tag: set() for word, tags in word_dict.items() for tag in tags
 }
@@ -52,12 +47,6 @@ for tag in pos_dict:
                 word
             )
 pos_dict = {key: list(val) for key,val in pos_dict.items()}
-
-# word_pair_matrix = [
-#     [1 if len(set(word_dict[word1])&set(word_dict[word2]))!=0 else 0 for word2 in word_dict]
-#     for word1 in word_dict
-# ]
-# word_pair_matrix = np.array(word_pair_matrix)
 
 word_dict = defaultdict(list, word_dict)
 
@@ -227,13 +216,13 @@ def batch_add_distractors_from_word2vec(
     min_candidates: int = 20
 ):
     candidates = [
-        sinonyms[word] for word in words
+        [syn_id2word[idx] for idx in sinonyms[word]] for word in words
     ]
     ## применить контекстуальные фильтры
-    pass
+    
     ## насколько это ускорит работу модели - 
     ## не знаю, но надо попробовать
-    raise NotImplementedError
+    return candidates
 
 
 @get_exec_time

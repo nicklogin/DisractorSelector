@@ -1,8 +1,7 @@
 import pandas as pd
-from distractor_generator.distractor_suggestor import batch_suggest_distractors
 
+from distractor_generator.distractor_suggestor import batch_suggest_distractors
 from distractor_generator.example_processor import batch_process_entries
-from distractor_generator.distractor_suggestor import suggest_distractors
 from distractor_generator.classifier import get_clf_and_cols, classify_examples
 
 from argparse import ArgumentParser
@@ -57,16 +56,11 @@ if __name__ == '__main__':
     corrections = df["Right_answer"].tolist()
 
     if args.get("no_clf"):
-        variant_lists = []
-        for sent, correction in zip(sents, corrections):
-            variants = suggest_distractors(
-                sent, correction, min_candidates=args.get("n")
-            )
-            variant_lists.append(variants)
-        df["variants"] = variant_lists
-        df.to_csv(
-            output_filename, sep=';'
-        )
+        variants = batch_suggest_distractors(sents, corrections, args.get('n'))
+        df["variants"] = variants
+        # df.to_csv(
+        #     output_filename, sep=';'
+        # )
     else:
         output_df = []
         variants = batch_suggest_distractors(sents, corrections, args.get('n'))
