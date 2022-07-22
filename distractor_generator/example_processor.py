@@ -85,6 +85,7 @@ def batch_process_entries(
     distractor_lists: List[List[str]],
     sent_ids: List[int] = None
 ):
+    # optimize
     if sent_ids is None:
         sent_ids = list(range(len(masked_sents)))
     output_dicts = []

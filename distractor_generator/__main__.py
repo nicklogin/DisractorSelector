@@ -58,9 +58,9 @@ if __name__ == '__main__':
     if args.get("no_clf"):
         variants = batch_suggest_distractors(sents, corrections, args.get('n'))
         df["variants"] = variants
-        # df.to_csv(
-        #     output_filename, sep=';'
-        # )
+        df.to_csv(
+            output_filename, sep=';'
+        )
     else:
         output_df = []
         variants = batch_suggest_distractors(sents, corrections, args.get('n'))
