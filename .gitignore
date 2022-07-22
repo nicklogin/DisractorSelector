@@ -4,3 +4,4 @@ env
 *.npy
 *.npz
 *.json
+*.pickle
