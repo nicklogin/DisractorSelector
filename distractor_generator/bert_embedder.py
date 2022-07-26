@@ -3,6 +3,7 @@ import torch as tt
 from transformers import BertTokenizer, BertModel
 from typing import List, Union, Tuple
 from math import ceil
+from tqdm import tqdm
 
 
 class BertEmbedder:
@@ -25,11 +26,22 @@ class BertEmbedder:
     def batch_embed_sentences(
         self,
         sents: List[str],
-        batch_size=64
+        batch_size=64,
+        verbose=False
     ) -> List[List[float]]:
         output = []
         n_batches = ceil(len(sents)/batch_size)
-        for i in range(n_batches):
+
+        if verbose:
+            print("Embedding whole sentences")
+            batch_ids = tqdm(
+                range(n_batches),
+                total=n_batches
+            )
+        else:
+            batch_ids = range(n_batches)
+
+        for i in batch_ids:
             batch = sents[i*batch_size:(i+1)*batch_size]
             h, _ = self._process_data(batch)
             h_mean = h.mean(axis=1).numpy().tolist()
@@ -48,11 +60,22 @@ class BertEmbedder:
     def batch_embed_mask_tokens(
         self,
         sents: List[List[str]],
-        batch_size=64
+        batch_size=64,
+        verbose=False
     ) -> List[List[float]]:
         output = []
         n_batches = ceil(len(sents)/batch_size)
-        for i in range(n_batches):
+
+        if verbose:
+            print("Embedding mask tokens only")
+            batch_ids = tqdm(
+                range(n_batches),
+                total=n_batches
+            )
+        else:
+            batch_ids = range(n_batches)
+
+        for i in batch_ids:
             batch = sents[i*batch_size:(i+1)*batch_size]
             h, tokenized = self._process_data(batch)
             tokenized = tokenized["input_ids"]

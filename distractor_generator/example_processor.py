@@ -1,14 +1,13 @@
 import pandas as pd
-
 import json
 
 from typing import List, Dict, Any
-
 from ast import literal_eval
 from gensim.models import KeyedVectors
 from collections import defaultdict
-from distractor_generator.utils import get_exec_time
+from tqdm import tqdm
 
+from distractor_generator.utils import get_exec_time
 from distractor_generator.bert_embedder import BertEmbedder
 
 
@@ -86,6 +85,7 @@ def batch_process_entries(
     sent_ids: List[int] = None
 ):
     # optimize
+    # оптимизация не требуется, большую часть времени занимает обработка предложений bert'ом
     if sent_ids is None:
         sent_ids = list(range(len(masked_sents)))
     output_dicts = []
@@ -101,13 +101,14 @@ def batch_process_entries(
         ]
     )
 
-    for sent_id, bert_masked, bert_sent, right_answer, distractors in zip(
+    # print("Postprocessing examples ... ")
+    for sent_id, bert_masked, bert_sent, right_answer, distractors in tqdm(zip(
         sent_ids,
         bert_masked_sents,
         bert_sents,
         right_answers,
         distractor_lists
-    ):
+    ), total=len(sent_ids)):
         wvc = word2vec[right_answer]
 
         try:
