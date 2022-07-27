@@ -3,6 +3,7 @@ import numpy as np
 
 import re
 import os
+import shutil
 import json
 import pickle
 
@@ -14,8 +15,23 @@ from string import punctuation
 from gensim.models import KeyedVectors
 from distractor_generator.utils import get_exec_time
 
-from distractor_generator.utils import download_word2vec_model
+from zipfile import ZipFile
 
+if not os.path.exists("sinonyms_compressed.pickle"):
+    folder = "sinonyms_compressed"
+
+    ## merge zip archives into one:
+    with open("sinonyms_compressed.zip", "wb") as outp:
+        for file in os.listdir(folder):
+            if file.startswith("sinonyms_compressed.zip"):
+                with open(os.path.join(folder, file), "rb") as inp:
+                    shutil.copyfileobj(inp, outp)
+
+    ## unzip and delete archive:
+    zfile = ZipFile("sinonyms_compressed.zip")
+    zfile.extractall()
+    zfile.close()
+    os.remove("sinonyms_compressed.zip")
 
 with open('sinonyms_compressed.pickle', 'rb') as inp:
     sinonyms, syn_id2word = pickle.load(inp)
