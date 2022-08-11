@@ -5,3 +5,4 @@ env
 *.npz
 *.json
 *.pickle
+bert-base-cased
