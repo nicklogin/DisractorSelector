@@ -1,3 +1,8 @@
 .vscode
+.git
 disselector_env1
+env
 *.ipynb
+word_pair_matrix.npy
+sinonyms.json
+sinonyms.pickle

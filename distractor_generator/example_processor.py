@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import os
 
 from typing import List, Dict, Any
 from ast import literal_eval
@@ -7,16 +8,20 @@ from gensim.models import KeyedVectors
 from collections import defaultdict
 from tqdm import tqdm
 
-from distractor_generator.utils import get_exec_time
+from distractor_generator.utils import get_exec_time, download_word2vec_model
 from distractor_generator.bert_embedder import BertEmbedder
 
 
 with open("freqdict.json", 'r', encoding='utf-8') as inp:
     freqdict = json.load(inp)
 freqdict = defaultdict(lambda: 1, freqdict)
+
+if not os.path.exists("gensim_models/skipgram_wikipedia_no_lemma"):
+    download_word2vec_model()
 word2vec = KeyedVectors.load_word2vec_format(
     "gensim_models/skipgram_wikipedia_no_lemma/model.txt"
 )
+
 bert = BertEmbedder("bert-base-cased")
 variants = pd.read_csv(
     "variants_clear_sorted.csv", sep=';', index_col="Unnamed: 0"

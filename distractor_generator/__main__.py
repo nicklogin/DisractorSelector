@@ -24,7 +24,7 @@ if __name__ == '__main__':
     parser.add_argument(
         "--cols_path",
         type=str,
-        default="XGBALLFeats/cols.json"
+        default="XGBAllFeats/cols.json"
     )
     args = vars(parser.parse_args())
 
