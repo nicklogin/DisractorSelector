@@ -1,4 +1,5 @@
 APScheduler==3.6.3
+anyio==3.6.1
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
 asttokens==2.0.5
@@ -22,11 +23,13 @@ defusedxml==0.7.1
 entrypoints==0.4
 et-xmlfile==1.1.0
 executing==0.8.3
+fastapi==0.79.0
 filelock==3.6.0
 fonttools==4.31.1
 gensim==4.1.2
 graphviz==0.20
 greenlet==1.1.2
+h11==0.13.0
 huggingface-hub==0.4.0
 idna==3.3
 importlib-resources==5.4.0
@@ -70,6 +73,7 @@ prompt-toolkit==3.0.28
 psutil==5.9.0
 pure-eval==0.2.2
 pycparser==2.21
+pydantic==1.9.2
 Pygments==2.11.2
 pyparsing==3.0.7
 pyrsistent==0.18.1
@@ -90,9 +94,11 @@ seaborn==0.11.2
 Send2Trash==1.8.0
 six==1.16.0
 smart-open==5.2.1
+sniffio==1.2.0
 soupsieve==2.3.1
 SQLAlchemy==1.4.35
 stack-data==0.2.0
+starlette==0.19.1
 tenacity==8.0.1
 terminado==0.13.3
 testpath==0.6.0
@@ -107,6 +113,7 @@ typing_extensions==4.1.1
 tzdata==2022.1
 tzlocal==4.1
 urllib3==1.26.9
+uvicorn==0.18.2
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.6.0
