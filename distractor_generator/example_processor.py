@@ -8,7 +8,7 @@ from gensim.models import KeyedVectors
 from collections import defaultdict
 from tqdm import tqdm
 
-from distractor_generator.utils import get_exec_time, download_word2vec_model
+from distractor_generator.utils import download_word2vec_model
 from distractor_generator.bert_embedder import BertEmbedder
 
 
@@ -83,7 +83,6 @@ def process_entry(
     return output_dicts
 
 
-@get_exec_time
 def batch_process_entries(
     masked_sents: List[str],
     right_answers: List[str],

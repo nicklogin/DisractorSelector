@@ -54,12 +54,12 @@ python -m distractor_generator --args
     <tr>
         <td>--filename</td>
         <td>Путь к входному файлу</td>
-        <td>gold_standard_input.csv</td>
+        <td>data/gold_standard_input.csv</td>
     </tr>
     <tr>
         <td>--output_filename</td>
         <td>Путь к выходному файлу</td>
-        <td><имя_входного_файла>_output.csv</td>
+        <td><имя_входного_файла>data/gold_standard_output.csv</td>
     </tr>
     <tr>
         <td>--sep</td>
