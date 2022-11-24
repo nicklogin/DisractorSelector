@@ -4,5 +4,6 @@ env
 *.npy
 *.npz
 *.json
+!data/freqdict.json
 *.pickle
 bert-base-cased

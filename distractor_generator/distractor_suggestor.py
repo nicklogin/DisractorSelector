@@ -13,7 +13,6 @@ from ast import literal_eval
 from nltk import word_tokenize
 from string import punctuation
 from gensim.models import KeyedVectors
-from distractor_generator.utils import get_exec_time
 
 from zipfile import ZipFile
 
@@ -37,7 +36,7 @@ with open('sinonyms_compressed.pickle', 'rb') as inp:
     sinonyms, syn_id2word = pickle.load(inp)
 
 variants = pd.read_csv(
-    "variants_clear_sorted.csv",
+    "data/variants_clear_sorted.csv",
     sep=';',
     index_col="Unnamed: 0"
 )
@@ -46,7 +45,7 @@ variants["variants"] = variants["variants"].apply(
 )
 
 word_dict = pd.read_csv(
-    "brown_corpus_tags.csv",
+    "data/brown_corpus_tags.csv",
     sep=';',
     index_col="Unnamed: 0"
 )["0"].apply(literal_eval).to_dict()
@@ -252,7 +251,6 @@ def suggest_distractors_from_corpus(
     return distractors
 
 
-@get_exec_time
 def batch_add_distractors_from_corpus(
     sents: List[str],
     corrections: List[str]
@@ -267,7 +265,6 @@ def batch_add_distractors_from_corpus(
     return variants
 
 
-@get_exec_time
 def batch_apply_vocab_filters(
     words: List[str],
     candidates: List[List[str]]
@@ -283,7 +280,6 @@ def batch_apply_vocab_filters(
     return candidates
 
 
-@get_exec_time
 def batch_apply_context_filters(
     candidates: List[List[str]],
     masked_sents: List[str]
@@ -308,7 +304,6 @@ def batch_apply_context_filters(
     return candidates
 
 
-@get_exec_time
 def batch_add_distractors_from_word2vec(
     words: List[str],
     masked_sents: List[str],
@@ -337,7 +332,6 @@ def batch_add_distractors_from_word2vec(
     return candidates
 
 
-@get_exec_time
 def batch_suggest_distractors(
     sents: List[str],
     corrections: List[str],

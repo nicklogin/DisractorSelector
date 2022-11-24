@@ -12,11 +12,25 @@
 python -m pip install -r requirements.txt
 ```
 
-2. Использование
+2. Установка через Docker
+
+DistractorSelector можно установить из Dockerhub-репозитория:
+
+```bash
+docker pull niklogin/disselector:latest
+```
+
+Также можно собрать Docker-образ самостоятельно:
+
+```bash
+docker build . -t disselector:latest
+```
+
+3. Использование через командную строку
 
 Данная программа принимает на вход СSV-файл с контекстами предложений и выдает файл с предлагаемыми неправильными вариантами ответа на вопросы с множественным выбором.
 
-Входной файл должен содержать следующие столбцы (см. пример - gold_standard_input.csv):
+Входной файл должен содержать следующие столбцы (см. пример - data/gold_standard_input.csv):
 
 <b>Masked_sentence</b> - Предложение, в котором "целевое" слово для формирования вопроса заменено на специальный токен [MASK]
 
@@ -84,3 +98,11 @@ python -m distractor_generator --args
 ```bash
 python -m nltk.downloader punkt
 ```
+
+4. Использование через WebAPI
+
+```bash
+python -m api
+```
+
+Документация будет доступна по адресу http://localhost:5000/docs

@@ -4,10 +4,7 @@ import json
 
 from typing import Any, List
 
-from distractor_generator.utils import get_exec_time
 
-
-@get_exec_time
 def get_clf_and_cols(
     clf_path: str,
     cols_path: str
@@ -21,7 +18,6 @@ def get_clf_and_cols(
     return clf, cols
 
 
-@get_exec_time
 def classify_examples(
     examples: pd.DataFrame,
     clf: Any,

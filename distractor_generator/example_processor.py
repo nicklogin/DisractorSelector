@@ -12,19 +12,20 @@ from distractor_generator.utils import get_exec_time, download_word2vec_model
 from distractor_generator.bert_embedder import BertEmbedder
 
 
-with open("freqdict.json", 'r', encoding='utf-8') as inp:
+with open("data/freqdict.json", 'r', encoding='utf-8') as inp:
     freqdict = json.load(inp)
 freqdict = defaultdict(lambda: 1, freqdict)
 
 if not os.path.exists("gensim_models/skipgram_wikipedia_no_lemma"):
     download_word2vec_model()
 word2vec = KeyedVectors.load_word2vec_format(
-    "gensim_models/skipgram_wikipedia_no_lemma/model.txt"
+    "gensim_models/skipgram_wikipedia_no_lemma/model.bin",
+    binary=True
 )
 
 bert = BertEmbedder("bert-base-cased")
 variants = pd.read_csv(
-    "variants_clear_sorted.csv", sep=';', index_col="Unnamed: 0"
+    "data/variants_clear_sorted.csv", sep=';', index_col="Unnamed: 0"
 )
 variants["variants"] = variants["variants"].apply(
     literal_eval

@@ -9,7 +9,7 @@ from argparse import ArgumentParser
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument(
-        "--filename", type=str, default="gold_standard_input.csv"
+        "--filename", type=str, default="gold_standard/gold_standard_input.csv"
     )
     parser.add_argument("--output_filename", type=str, default=None)
     parser.add_argument("--sep", type=str, default=";")
