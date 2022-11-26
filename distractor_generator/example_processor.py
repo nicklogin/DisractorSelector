@@ -89,41 +89,43 @@ def batch_process_entries(
         right_answers,
         distractor_lists
     ), total=len(sent_ids)):
-        wvc = word2vec[right_answer]
+        if right_answer in word2vec:
+            wvc = word2vec[right_answer]
 
-        try:
-            freq_corr = variants.loc[right_answer]["Count"]
-        except KeyError:
-            freq_corr = freqdict[right_answer]
-
-        freq_corr_corp = 1
-
-        for distractor in distractors:
-            output_dict = {
-                "sent_id": sent_id,
-                "variant": distractor,
-                "freq_corr": freq_corr,
-                "freq_corr_corp": freq_corr_corp,
-            }
-            for i in range(len(wvc)):
-                output_dict[f"wvc_{i}"] = wvc[i]
-            for i in range(len(bert_masked)):
-                output_dict[f"bm_{i}"] = bert_masked[i]
-            for i in range(len(bert_sent)):
-                output_dict[f"bs_{i}"] = bert_sent[i]
-            # wve
-            wve = word2vec[distractor]
-            for i in range(len(wve)):
-                output_dict[f"wve_{i}"] = wve[i]
-            # freq_err_corr
             try:
-                output_dict["freq_err_corr"] = variants.loc[
-                    right_answer
-                ]["variants"][distractor]
+                freq_corr = variants.loc[right_answer]["Count"]
             except KeyError:
-                output_dict["freq_err_corr"] = 1
-            # freq_err_corp
-            output_dict["freq_err_corp"] = freqdict[distractor]
-            output_dicts.append(output_dict)
+                freq_corr = freqdict[right_answer]
+
+            freq_corr_corp = 1
+
+            for distractor in distractors:
+                output_dict = {
+                    "sent_id": sent_id,
+                    "variant": distractor,
+                    "freq_corr": freq_corr,
+                    "freq_corr_corp": freq_corr_corp,
+                }
+                for i in range(len(wvc)):
+                    output_dict[f"wvc_{i}"] = wvc[i]
+                for i in range(len(bert_masked)):
+                    output_dict[f"bm_{i}"] = bert_masked[i]
+                for i in range(len(bert_sent)):
+                    output_dict[f"bs_{i}"] = bert_sent[i]
+                # wve
+                if distractor in word2vec:
+                    wve = word2vec[distractor]
+                    for i in range(len(wve)):
+                        output_dict[f"wve_{i}"] = wve[i]
+                    # freq_err_corr
+                    try:
+                        output_dict["freq_err_corr"] = variants.loc[
+                            right_answer
+                        ]["variants"][distractor]
+                    except KeyError:
+                        output_dict["freq_err_corr"] = 1
+                    # freq_err_corp
+                    output_dict["freq_err_corp"] = freqdict[distractor]
+                    output_dicts.append(output_dict)
 
     return output_dicts

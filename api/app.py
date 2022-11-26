@@ -69,7 +69,6 @@ def get_distractors(
         columns
     )
     output_df["target"] = targets
-    output_df.to_csv("output_df.csv")
 
     distractors = output_df.loc[
         output_df["target"] >= 0.5

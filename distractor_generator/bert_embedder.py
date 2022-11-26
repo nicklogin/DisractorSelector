@@ -1,4 +1,5 @@
 import torch as tt
+import os
 
 from transformers import BertTokenizer, BertModel
 from typing import List, Union, Tuple
@@ -10,6 +11,7 @@ class BertEmbedder:
     def __init__(self, model_name: str):
         self.model = BertModel.from_pretrained(model_name)
         self.tokenizer = BertTokenizer.from_pretrained(model_name)
+        self.batch_size = os.getenv("BATCH_SIZE", default=512) # 64
 
     def _process_data(self, data: Union[str, List[str]]) -> tt.Tensor:
         tokenized = self.tokenizer(data, return_tensors="pt", padding=True)
@@ -26,11 +28,10 @@ class BertEmbedder:
     def batch_embed_sentences(
         self,
         sents: List[str],
-        batch_size=64,
         verbose=False
     ) -> List[List[float]]:
         output = []
-        n_batches = ceil(len(sents)/batch_size)
+        n_batches = ceil(len(sents)/self.batch_size)
 
         if verbose:
             print("Embedding whole sentences")
@@ -42,7 +43,7 @@ class BertEmbedder:
             batch_ids = range(n_batches)
 
         for i in batch_ids:
-            batch = sents[i*batch_size:(i+1)*batch_size]
+            batch = sents[i*self.batch_size:(i+1)*self.batch_size]
             h, _ = self._process_data(batch)
             h_mean = h.mean(axis=1).numpy().tolist()
             output += h_mean
@@ -60,11 +61,10 @@ class BertEmbedder:
     def batch_embed_mask_tokens(
         self,
         sents: List[List[str]],
-        batch_size=64,
         verbose=False
     ) -> List[List[float]]:
         output = []
-        n_batches = ceil(len(sents)/batch_size)
+        n_batches = ceil(len(sents)/self.batch_size)
 
         if verbose:
             print("Embedding mask tokens only")
@@ -76,7 +76,7 @@ class BertEmbedder:
             batch_ids = range(n_batches)
 
         for i in batch_ids:
-            batch = sents[i*batch_size:(i+1)*batch_size]
+            batch = sents[i*self.batch_size:(i+1)*self.batch_size]
             h, tokenized = self._process_data(batch)
             tokenized = tokenized["input_ids"]
             mask_index = tt.nonzero(
