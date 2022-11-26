@@ -7,3 +7,4 @@ env
 !data/freqdict.json
 *.pickle
 bert-base-cased
+__pycache__
