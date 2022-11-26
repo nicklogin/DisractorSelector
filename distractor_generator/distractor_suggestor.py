@@ -1,69 +1,10 @@
-import pandas as pd
-import numpy as np
-
-import re
-import os
-import shutil
-import json
-import pickle
-
 from typing import List, Tuple
-from collections import defaultdict
-from ast import literal_eval
 from nltk import word_tokenize
 from string import punctuation
-from gensim.models import KeyedVectors
 
-from zipfile import ZipFile
-
-if not os.path.exists("sinonyms_compressed.pickle"):
-    folder = "sinonyms_compressed"
-
-    ## merge zip archives into one:
-    with open("sinonyms_compressed.zip", "wb") as outp:
-        for file in os.listdir(folder):
-            if file.startswith("sinonyms_compressed.zip"):
-                with open(os.path.join(folder, file), "rb") as inp:
-                    shutil.copyfileobj(inp, outp)
-
-    ## unzip and delete archive:
-    zfile = ZipFile("sinonyms_compressed.zip")
-    zfile.extractall()
-    zfile.close()
-    os.remove("sinonyms_compressed.zip")
-
-with open('sinonyms_compressed.pickle', 'rb') as inp:
-    sinonyms, syn_id2word = pickle.load(inp)
-
-variants = pd.read_csv(
-    "data/variants_clear_sorted.csv",
-    sep=';',
-    index_col="Unnamed: 0"
-)
-variants["variants"] = variants["variants"].apply(
-    literal_eval
-)
-
-word_dict = pd.read_csv(
-    "data/brown_corpus_tags.csv",
-    sep=';',
-    index_col="Unnamed: 0"
-)["0"].apply(literal_eval).to_dict()
-
-pos_dict = {
-    tag: set() for word, tags in word_dict.items() for tag in tags
-}
-for tag in pos_dict:
-    for word, tags in word_dict.items():
-        if tag in tags:
-            pos_dict[
-                tag
-            ].add(
-                word
-            )
-pos_dict = {key: list(val) for key,val in pos_dict.items()}
-
-word_dict = defaultdict(list, word_dict)
+from distractor_generator.resources import sinonyms, syn_id2word
+from distractor_generator.resources import word_dict
+from distractor_generator.resources import variants
 
 
 def is_aux_verb(word: str) -> bool:
@@ -85,16 +26,9 @@ def is_aux_verb(word: str) -> bool:
 
 
 def is_negation(word_a: str, word_b: str) -> bool:
-    # optimize
-    # здесь регулярка всё замедляет, переписать без регулярки
     word_a = word_a.lower()
     word_b = word_b.lower()
 
-    # if re.match(f"(un|im|in|non){re.escape(word_a)}", word_b):
-    #     return True
-
-    # if re.match(f"(un|im|in|non){re.escape(word_b)}", word_a):
-    #     return True
     prefixes = ("un","im","in","non")
 
     if word_a in (prefix+word_b for prefix in prefixes):
@@ -202,21 +136,12 @@ def is_context_word_copied(
     return False
 
 
-# def get_variant_count(word: str, x: str):
-#     print(x, word)
-#     vcount = variants.loc[word]["variants"].get(x)
-#     print(str(vcount))
-#     return vcount
-
-
-# Function that suggests distractors:
 def suggest_distractors_from_corpus(
     masked_sent: str,
     word: str
 ) -> List[str]:
     distractors = []
 
-    # дистракторы из ошибок realec:
     if word in variants.index:
         distractors += [
             key for key, val in variants.loc[
@@ -282,7 +207,7 @@ def batch_apply_vocab_filters(
 
 def batch_apply_context_filters(
     candidates: List[List[str]],
-    masked_sents: List[str]
+    masked_sents: List[str],
 ):
     # 1 условие:
     candidates = [
@@ -297,7 +222,7 @@ def batch_apply_context_filters(
     candidates = [
         [
             candidate for candidate in candidate_list if
-            not is_context_word_copied(left_context, right_context, word)
+            not is_context_word_copied(left_context, right_context, candidate)
         ] for candidate_list, (left_context, right_context) in zip(candidates, contexts)
     ]
 
@@ -311,24 +236,38 @@ def batch_add_distractors_from_word2vec(
     min_candidates: int = 20
 ) -> List[List[str]]:
     candidates = [
-        [syn_id2word[idx] for idx in sinonyms[word]] for word in words
+        [
+            syn_id2word[idx] for idx in sinonyms[word.lower()]
+        ] if word.lower() in sinonyms
+        else []
+        for word in words
     ]
+
+    candidates = [
+        [cand.title() for cand in cand_list] if word.istitle()
+        else [cand.upper() for cand in cand_list] if word.isupper()
+        else cand_list
+        for word, cand_list in zip(words, candidates)
+    ]
+
     ## применить словарные фильтры
     candidates = batch_apply_vocab_filters(words, candidates)
+
     ## применить контекстуальные фильтры
     candidates = batch_apply_context_filters(candidates, masked_sents)
+
     # удалить существующие дистракторы (чтобы не записывать их два раза):
     candidates = [
         [candidate for candidate in candidate_list if candidate not in variant_list]
         for variant_list, candidate_list in zip(distractors, candidates)
     ]
+
     ## приплюснуть к существующим дистракторам
     candidates = [
         (variant_list + candidate_list)[:min_candidates]
         for variant_list, candidate_list in zip(distractors, candidates)
     ]
-    ## насколько это ускорит работу модели - 
-    ## не знаю, но надо попробовать
+
     return candidates
 
 
