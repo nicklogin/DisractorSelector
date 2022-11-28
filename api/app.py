@@ -1,7 +1,8 @@
 import pandas as pd
+import os
 
-from fastapi import FastAPI, Query
-from pydantic import BaseModel
+from fastapi import FastAPI, Query, APIRouter
+from pydantic import BaseModel, Field
 from typing import List, Dict, Optional
 
 from distractor_generator.distractor_suggestor import batch_suggest_distractors
@@ -19,13 +20,17 @@ clfs = [
 
 
 class Example(BaseModel):
-    id: int
-    masked_sent: str
-    correction: str
+    id: int = Field(1)
+    # Rename to sentence
+    masked_sent: str = Field(
+        example="The ________ of students choosing art subjects is decreasing"
+    )
+    # Rename to right_answer
+    correction: str = Field("number")
 
 
 class ProcessedExample(Example):
-    variants: List[str]
+    variants: List[str] # Rename to distractors
 
 
 app = FastAPI(
@@ -40,7 +45,7 @@ def get_distractors(
     n: Optional[int] = Query(4),
     clf: Optional[str] = Query("XGBAllFeats", enum=clfs)
 ) -> List[ProcessedExample]:
-    sents = [example.masked_sent for example in examples]
+    sents = [example.masked_sent.replace("_"*8, "[MASK]") for example in examples]
     corrections = [example.correction for example in examples]
 
     variants = batch_suggest_distractors(sents, corrections, n)
