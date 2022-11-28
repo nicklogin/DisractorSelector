@@ -11,7 +11,7 @@ class BertEmbedder:
     def __init__(self, model_name: str):
         self.model = BertModel.from_pretrained(model_name)
         self.tokenizer = BertTokenizer.from_pretrained(model_name)
-        self.batch_size = os.getenv("BATCH_SIZE", default=512) # 64
+        self.batch_size = int(os.getenv("BATCH_SIZE", default=512)) # 64
 
     def _process_data(self, data: Union[str, List[str]]) -> tt.Tensor:
         tokenized = self.tokenizer(data, return_tensors="pt", padding=True)
