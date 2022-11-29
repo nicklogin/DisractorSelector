@@ -7,3 +7,4 @@ word_pair_matrix.npy
 sinonyms.json
 sinonyms.pickle
 gensim_models/skipgram_wikipedia_no_lemma/model.txt
+__pycache__

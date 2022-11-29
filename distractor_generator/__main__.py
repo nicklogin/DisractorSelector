@@ -43,15 +43,7 @@ if __name__ == '__main__':
         sep=args.get("sep"),
         index_col=args.get("index_col")
     )
-    # df = df.loc[(
-    #     (
-    #         df["Distractor 1"] != "Delete"
-    #     ) & (
-    #         df["Distractor 2"] != "Delete"
-    #     ) & (
-    #         df["Distractor 3"] != "Delete"
-    #     )
-    # )]
+
     sents = df["Masked_sentence"].tolist()
     corrections = df["Right_answer"].tolist()
 

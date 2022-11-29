@@ -1,12 +1,18 @@
 import pandas as pd
+import os
 
-from fastapi import FastAPI, Query
-from pydantic import BaseModel
+from fastapi import FastAPI, Query, APIRouter
+from pydantic import BaseModel, Field
 from typing import List, Dict, Optional
+
+from starlette.requests import Request
 
 from distractor_generator.distractor_suggestor import batch_suggest_distractors
 from distractor_generator.example_processor import batch_process_entries
 from distractor_generator.classifier import get_clf_and_cols, classify_examples
+
+
+from fastapi.openapi.docs import get_swagger_ui_html
 
 
 clfs = [
@@ -19,28 +25,35 @@ clfs = [
 
 
 class Example(BaseModel):
-    id: int
-    masked_sent: str
-    correction: str
+    id: int = Field(1)
+    # Rename to sentence
+    masked_sent: str = Field(
+        example="The ________ of students choosing art subjects is decreasing"
+    )
+    # Rename to right_answer
+    correction: str = Field("number")
 
 
 class ProcessedExample(Example):
-    variants: List[str]
+    variants: List[str] # Rename to distractors
 
+ROOT_PATH = os.getenv("DISSELECTOR_ROOT_PATH", default="")
 
 app = FastAPI(
     title="Distractor Suggestor",
-    version="0.1.0"
+    version="0.1.0",
+    root_path=ROOT_PATH,
+    # openapi_url=ROOT_PATH+"/openapi.json"
 )
 
 
-@app.post("/")
+@app.post("/api/")
 def get_distractors(
     examples: List[Example],
     n: Optional[int] = Query(4),
     clf: Optional[str] = Query("XGBAllFeats", enum=clfs)
 ) -> List[ProcessedExample]:
-    sents = [example.masked_sent for example in examples]
+    sents = [example.masked_sent.replace("_"*8, "[MASK]") for example in examples]
     corrections = [example.correction for example in examples]
 
     variants = batch_suggest_distractors(sents, corrections, n)
@@ -92,4 +105,3 @@ def get_distractors(
     ]
 
     return output
-
