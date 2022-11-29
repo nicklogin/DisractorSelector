@@ -5,9 +5,14 @@ from fastapi import FastAPI, Query, APIRouter
 from pydantic import BaseModel, Field
 from typing import List, Dict, Optional
 
+from starlette.requests import Request
+
 from distractor_generator.distractor_suggestor import batch_suggest_distractors
 from distractor_generator.example_processor import batch_process_entries
 from distractor_generator.classifier import get_clf_and_cols, classify_examples
+
+
+from fastapi.openapi.docs import get_swagger_ui_html
 
 
 clfs = [
@@ -32,14 +37,17 @@ class Example(BaseModel):
 class ProcessedExample(Example):
     variants: List[str] # Rename to distractors
 
+ROOT_PATH = os.getenv("DISSELECTOR_ROOT_PATH", default="")
 
 app = FastAPI(
     title="Distractor Suggestor",
-    version="0.1.0"
+    version="0.1.0",
+    root_path=ROOT_PATH,
+    openapi_url=ROOT_PATH+"/openapi.json"
 )
 
 
-@app.post("/")
+@app.post("/api/")
 def get_distractors(
     examples: List[Example],
     n: Optional[int] = Query(4),
@@ -97,4 +105,3 @@ def get_distractors(
     ]
 
     return output
-
