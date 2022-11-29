@@ -43,7 +43,7 @@ app = FastAPI(
     title="Distractor Suggestor",
     version="0.1.0",
     root_path=ROOT_PATH,
-    openapi_url=ROOT_PATH+"/openapi.json"
+    # openapi_url=ROOT_PATH+"/openapi.json"
 )
 
 
