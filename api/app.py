@@ -28,7 +28,7 @@ class Example(BaseModel):
     id: int = Field(1)
     # Rename to sentence
     masked_sent: str = Field(
-        example="The ________ of students choosing art subjects is decreasing"
+        example="The ________ of students choosing this subject is decreasing"
     )
     # Rename to right_answer
     correction: str = Field("number")
