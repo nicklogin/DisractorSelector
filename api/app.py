@@ -40,7 +40,7 @@ class ProcessedExample(Example):
 ROOT_PATH = os.getenv("DISSELECTOR_ROOT_PATH", default="")
 
 app = FastAPI(
-    title="Distractor Suggestor",
+    title="DisSelector",
     version="0.1.0",
     root_path=ROOT_PATH,
     # openapi_url=ROOT_PATH+"/openapi.json"
