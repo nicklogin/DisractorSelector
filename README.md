@@ -1,110 +1,105 @@
-# DistractorSelector
+# Distractor Selector
 
-Исходный код магистерской дипломной работы Н. Логин "Автоматизированная генерация грамматических вопросов с множественным выбором на базе корпусной аннотации"
+The training dataset is available at https://disk.yandex.ru/d/_k_AwobPf0l5bQ
 
-Обучающий датасет доступен по адресу https://disk.yandex.ru/d/_k_AwobPf0l5bQ
+1. Installation
 
-Папка processed_texts (для эксперимента по предсказанию места ошибки - predict_error_places.ipynb) доступна по адресу https://disk.yandex.ru/d/6t48nLkkC3mF6Q
-
-1. Установка
-
-Для использованием программы необходимо склонировать данный репозиторий и установить зависимости
+Clone this repository and install requirements
 
 ```bash
+git clone https://github.com/nicklogin/DistractorSelector
 python -m pip install -r requirements.txt
+python -m nltk.downloader punkt
 ```
 
-2. Установка через Docker
+2. Installation via Docker
 
-DistractorSelector можно установить из Dockerhub-репозитория:
+You can install DistractorSelector image from Dockerhub:
 
 ```bash
 docker pull niklogin/disselector:latest
 ```
 
-Также можно собрать Docker-образ самостоятельно:
+You can also build a Docker image from source after cloning this repository:
 
 ```bash
 docker build . -t disselector:latest
 ```
 
-3. Использование через командную строку
+3. Usage via terminal/command line
 
-Данная программа принимает на вход СSV-файл с контекстами предложений и выдает файл с предлагаемыми неправильными вариантами ответа на вопросы с множественным выбором.
+DistractorSelector accepts a CSV file with sentences as an input and outputs a CSV file with distractors.
 
-Входной файл должен содержать следующие столбцы (см. пример - data/gold_standard_input.csv):
+The input file must contian the following fields (example - gold_standard/gold_standard_input.csv):
 
-<b>Masked_sentence</b> - Предложение, в котором "целевое" слово для формирования вопроса заменено на специальный токен [MASK]
+<b>Masked sentence</b> - The sentence where the target word is replaces with [MASK] token
 
-<b>Right_answer</b> - целевое слово
+<b>Right answer</b> - The target word
 
-Запуск программы осуществляется следующей командой
+Run this command to get output of DistractorSelector:
+
 ```bash
-python -m distractor_generator --args
+python -m distractor_generator --
 ```
 
-Аргументы командной строки программы
+DistractorSelector accepts the following set of CLI arguments:
 
 <table>
     <th>
         <tr>
-            <td>Аргумент</td>
-            <td>Описание</td>
-            <td>Значение по умолчанию</td>
+            <td>Argument</td>
+            <td>Description</td>
+            <td>Default value</td>
         </tr>
     </th>
     <tr>
         <td>--filename</td>
-        <td>Путь к входному файлу</td>
-        <td>data/gold_standard_input.csv</td>
+        <td>Path to input file</td>
+        <td>gold_standard/gold_standard_input.csv</td>
     </tr>
     <tr>
         <td>--output_filename</td>
-        <td>Путь к выходному файлу</td>
-        <td><имя_входного_файла>data/gold_standard_output.csv</td>
+        <td>Path to output file</td>
+        <td>data/gold_standard_output.csv</td>
     </tr>
     <tr>
         <td>--sep</td>
-        <td>Разделитель полей в CSV-файле</td>
+        <td>Field delimiter in a CSV file</td>
         <td>;</td>
     </tr>
     <tr>
         <td>--index_col</td>
-        <td>Название столбца-индекса в CSV-файле</td>
-        <td>Без названия</td>
+        <td>The name of the index column in a CSV file</td>
+        <td>None</td>
     </tr>
     <tr>
         <td>--n</td>
-        <td>Количество вариантов, поступающих на вход классификатора</td>
-        <td>Значение по умолчанию</td>
+        <td>Number of distractors on the classifier input</td>
+        <td>20</td>
     </tr>
     <tr>
         <td>--no-clf</td>
-        <td>Не использовать классификатор</td>
+        <td>Do not use classifier</td>
         <td> - </td>
     </tr>
     <tr>
         <td>--clf_path</td>
-        <td>Путь к файлу с сохранённой моделью классификатора</td>
+        <td>Path to file with the saved classifier model</td>
         <td>XGBAllFeats/clf.pkl</td>
     </tr>
     <tr>
         <td>--cols_path</td>
-        <td>Путь к файлу с перечислением признаков, релевантных для классификатора</td>
+        <td>Path to file with feature names to be used with the classifier</td>
         <td>XGBAllFeats/cols.json</td>
     </tr>
 </table>
 
-В случае возникновения ошибок на стороне NLTK выполнить следующую команду
+4. Usage via a WebAPI
 
-```bash
-python -m nltk.downloader punkt
-```
-
-4. Использование через WebAPI
+Execute this command in command line/terminal to run the API of DistractorSelector:
 
 ```bash
 python -m api
 ```
 
-Документация будет доступна по адресу http://localhost:5000/docs
+The documentation will be available at http://localhost:5000/docs
