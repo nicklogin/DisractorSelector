@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 from fastapi import FastAPI, Query, APIRouter
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, validator
 from typing import List, Dict, Optional
 
 from starlette.requests import Request
@@ -25,14 +25,22 @@ clfs = [
 
 
 class Example(BaseModel):
-    id: int = Field(1)
+    id: int = Field(example=1)
     # Rename to sentence
-    masked_sent: str = Field(
+    sentence: str = Field(
         example="The ________ of students choosing this subject is decreasing"
+        # description="A sentence containing 8 underscores (\"________\") or \"[MASK]\" token in place of the target word"
     )
     # Rename to right_answer
-    correction: str = Field("number")
+    right_answer: str = Field(example="number")
 
+    @validator('sentence')
+    def has_underscores_or_mask(cls, v):
+        if '________' not in v and '[MASK]' not in v:
+            raise ValueError(
+                "Input sentence must contain either 8 underscores (________) or \"[MASK]\" token"
+            )
+        return v
 
 class ProcessedExample(Example):
     variants: List[str] # Rename to distractors
@@ -53,8 +61,9 @@ def get_distractors(
     n: Optional[int] = Query(4),
     clf: Optional[str] = Query("XGBAllFeats", enum=clfs)
 ) -> List[ProcessedExample]:
-    sents = [example.masked_sent.replace("_"*8, "[MASK]") for example in examples]
-    corrections = [example.correction for example in examples]
+    print(examples)
+    sents = [example.sentence.replace("_"*8, "[MASK]") for example in examples]
+    corrections = [example.right_answer for example in examples]
 
     variants = batch_suggest_distractors(sents, corrections, n)
 
@@ -62,8 +71,8 @@ def get_distractors(
         output = [
             ProcessedExample(
                 id=example.id,
-                masked_sent=example.masked_sent,
-                correction=example.correction,
+                masked_sent=example.sentence,
+                correction=example.right_answer,
                 variants=variant_list
             ) for example, variant_list in zip(examples, variants)
         ]
@@ -98,8 +107,8 @@ def get_distractors(
     output = [
         ProcessedExample(
             id=example.id,
-            masked_sent=example.masked_sent,
-            correction=example.correction,
+            sentence=example.sentence,
+            right_answer=example.right_answer,
             variants=variant_list
         ) for example, variant_list in zip(examples, distractors)
     ]
