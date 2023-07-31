@@ -8,3 +8,4 @@ env
 *.pickle
 bert-base-cased
 __pycache__
+processed_dataset*
