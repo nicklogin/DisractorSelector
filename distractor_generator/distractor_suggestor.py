@@ -19,7 +19,7 @@ def is_aux_verb(word: str) -> bool:
         "might", "must", "may",
         "will", "would"
     ]
-    
+
     if word in aux_verbs:
         return True
     return False

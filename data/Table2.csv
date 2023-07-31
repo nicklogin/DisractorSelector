@@ -1,0 +1,9 @@
+;method;N;Appropriate (by sent);Too bad (by sent);Too good (by sent);N distractors
+1;XGBAllFeats_out;3;59.87;27.63;12.5;2.51
+3;CatBoostVecsOnly_out;3;57.46;27.19;12.72;2.28
+6;XGBAllFeats_out;4;56.14;32.68;11.18;3.24
+4;CatBoostFeatDrop_out;3;55.04;30.48;14.47;2.67
+8;CatBoostVecsOnly_out;4;53.62;31.47;12.28;2.91
+11;XGBAllFeats_out;5;53.55;35.77;10.68;3.89
+0;Baseline (no clf);3;53.07;33.33;13.6;3.0
+9;CatBoostFeatDrop_out;4;52.63;33.33;14.04;3.45

@@ -1,7 +1,5 @@
 # Distractor Selector
 
-The training dataset is available at https://disk.yandex.ru/d/_k_AwobPf0l5bQ
-
 1. Installation
 
 Clone this repository and install requirements
