@@ -1,0 +1,205 @@
+,index,Model,Setting,Dropped feature,F1-Score,Accuracy,Precision,Recall
+0,0,XGBoost,AllFeats,—,0.72,0.72,0.69,0.75
+1,2,CatBoost,AllFeats,—,0.71,0.71,0.68,0.74
+2,3,Random Forest,AllFeats,—,0.71,0.7,0.66,0.76
+3,1,Gradient Boosting,AllFeats,—,0.71,0.72,0.69,0.74
+4,4,LightGBM,AllFeats,—,0.7,0.7,0.67,0.73
+5,5,Histogram Gradient Boosting,AllFeats,—,0.7,0.7,0.66,0.73
+6,6,AdaBoost,AllFeats,—,0.69,0.71,0.7,0.67
+7,7,Logistic Regression,AllFeats,—,0.69,0.68,0.64,0.73
+8,10,K-Nearest Neighbors (K=3),AllFeats,—,0.68,0.69,0.67,0.69
+9,8,K-Nearest Neighbors (K=1),AllFeats,—,0.68,0.7,0.68,0.7
+10,9,K-Nearest Neighbors (K=5),AllFeats,—,0.68,0.68,0.65,0.71
+11,11,Decision Tree,AllFeats,—,0.64,0.65,0.62,0.66
+12,12,Ridge Regression,AllFeats,—,0.64,0.64,0.61,0.67
+13,13,K-Nearest Neighbors (K=4),AllFeats,—,0.63,0.67,0.69,0.57
+14,14,K-Nearest Neighbors (K=2),AllFeats,—,0.58,0.67,0.73,0.49
+15,15,SVM,AllFeats,—,0.58,0.48,0.47,0.75
+16,16,Naive Bayesian Classifier,AllFeats,—,0.56,0.57,0.55,0.57
+17,0,Random Forest,FreqsOnly,word and sentence vectors,0.69,0.71,0.7,0.67
+18,1,LightGBM,FreqsOnly,word and sentence vectors,0.69,0.7,0.69,0.69
+19,2,XGBoost,FreqsOnly,word and sentence vectors,0.68,0.71,0.71,0.66
+20,3,Histogram Gradient Boosting,FreqsOnly,word and sentence vectors,0.68,0.7,0.7,0.67
+21,4,K-Nearest Neighbors (K=3),FreqsOnly,word and sentence vectors,0.68,0.68,0.65,0.72
+22,5,CatBoost,FreqsOnly,word and sentence vectors,0.68,0.7,0.68,0.68
+23,6,Gradient Boosting,FreqsOnly,word and sentence vectors,0.68,0.7,0.68,0.68
+24,8,AdaBoost,FreqsOnly,word and sentence vectors,0.67,0.7,0.72,0.62
+25,7,K-Nearest Neighbors (K=1),FreqsOnly,word and sentence vectors,0.67,0.67,0.63,0.72
+26,9,K-Nearest Neighbors (K=5),FreqsOnly,word and sentence vectors,0.66,0.66,0.63,0.7
+27,10,Decision Tree,FreqsOnly,word and sentence vectors,0.64,0.69,0.71,0.59
+28,11,Logistic Regression,FreqsOnly,word and sentence vectors,0.64,0.63,0.6,0.69
+29,12,Ridge Regression,FreqsOnly,word and sentence vectors,0.64,0.59,0.55,0.76
+30,13,K-Nearest Neighbors (K=4),FreqsOnly,word and sentence vectors,0.62,0.66,0.67,0.58
+31,14,K-Nearest Neighbors (K=2),FreqsOnly,word and sentence vectors,0.58,0.66,0.69,0.5
+32,15,SVM,FreqsOnly,word and sentence vectors,0.48,0.55,0.53,0.44
+33,16,Naive Bayesian Classifier,FreqsOnly,word and sentence vectors,0.28,0.58,0.77,0.17
+34,0,CatBoost,VecsOnly,word frequencies,0.72,0.72,0.68,0.76
+35,2,XGBoost,VecsOnly,word frequencies,0.7,0.7,0.67,0.73
+36,3,LightGBM,VecsOnly,word frequencies,0.7,0.7,0.67,0.73
+37,1,Histogram Gradient Boosting,VecsOnly,word frequencies,0.7,0.71,0.68,0.72
+38,4,Random Forest,VecsOnly,word frequencies,0.69,0.69,0.65,0.73
+39,5,Gradient Boosting,VecsOnly,word frequencies,0.68,0.68,0.65,0.72
+40,6,K-Nearest Neighbors (K=5),VecsOnly,word frequencies,0.68,0.68,0.65,0.71
+41,7,K-Nearest Neighbors (K=3),VecsOnly,word frequencies,0.67,0.67,0.63,0.71
+42,9,K-Nearest Neighbors (K=1),VecsOnly,word frequencies,0.66,0.67,0.65,0.67
+43,8,Logistic Regression,VecsOnly,word frequencies,0.66,0.66,0.62,0.71
+44,10,AdaBoost,VecsOnly,word frequencies,0.65,0.66,0.65,0.66
+45,11,SVM,VecsOnly,word frequencies,0.63,0.63,0.6,0.67
+46,12,Ridge Regression,VecsOnly,word frequencies,0.62,0.63,0.6,0.65
+47,13,K-Nearest Neighbors (K=4),VecsOnly,word frequencies,0.62,0.67,0.69,0.56
+48,14,Decision Tree,VecsOnly,word frequencies,0.61,0.61,0.59,0.62
+49,15,Naive Bayesian Classifier,VecsOnly,word frequencies,0.58,0.56,0.53,0.64
+50,16,K-Nearest Neighbors (K=2),VecsOnly,word frequencies,0.53,0.64,0.7,0.43
+51,0,Gradient Boosting,AllFeats (unlabelled baseline),—,0.43,0.83,0.53,0.36
+52,1,AdaBoost,AllFeats (unlabelled baseline),—,0.42,0.82,0.47,0.38
+53,2,XGBoost,AllFeats (unlabelled baseline),—,0.4,0.82,0.49,0.33
+54,3,Naive Bayesian Classifier,AllFeats (unlabelled baseline),—,0.38,0.67,0.28,0.59
+55,4,K-Nearest Neighbors (K=5),AllFeats (unlabelled baseline),—,0.38,0.82,0.49,0.31
+56,7,Histogram Gradient Boosting,AllFeats (unlabelled baseline),—,0.37,0.83,0.54,0.28
+57,8,Ridge Regression,AllFeats (unlabelled baseline),—,0.37,0.74,0.32,0.43
+58,6,Decision Tree,AllFeats (unlabelled baseline),—,0.37,0.75,0.32,0.43
+59,5,CatBoost,AllFeats (unlabelled baseline),—,0.37,0.84,0.56,0.28
+60,9,K-Nearest Neighbors (K=3),AllFeats (unlabelled baseline),—,0.36,0.81,0.43,0.31
+61,10,LightGBM,AllFeats (unlabelled baseline),—,0.36,0.83,0.52,0.27
+62,11,K-Nearest Neighbors (K=1),AllFeats (unlabelled baseline),—,0.35,0.76,0.33,0.38
+63,12,SVM,AllFeats (unlabelled baseline),—,0.34,0.38,0.21,0.91
+64,13,Logistic Regression,AllFeats (unlabelled baseline),—,0.33,0.81,0.43,0.27
+65,14,K-Nearest Neighbors (K=2),AllFeats (unlabelled baseline),—,0.29,0.83,0.56,0.2
+66,15,K-Nearest Neighbors (K=4),AllFeats (unlabelled baseline),—,0.26,0.82,0.47,0.18
+67,16,Random Forest,AllFeats (unlabelled baseline),—,0.24,0.84,0.61,0.15
+68,0,CatBoost,,Word2Vec vector of Ans,0.73,0.73,0.7,0.75
+69,1,Random Forest,,Averaged BERT vector of S with gap replaced by Ans,0.73,0.72,0.69,0.77
+70,2,Random Forest,,Frequency of Ans in the whole corpus,0.72,0.72,0.68,0.77
+71,3,Random Forest,,Word2Vec vector of Ans,0.72,0.72,0.69,0.75
+72,4,LightGBM,,Word2Vec vector of Ans,0.72,0.72,0.69,0.75
+73,5,Random Forest,,Frequency of d misuses instead of Ans in corpus,0.72,0.71,0.68,0.76
+74,6,Random Forest,,Frequency of Ans in corpus corrections,0.72,0.71,0.67,0.76
+75,7,Gradient Boosting,,Frequency of d in the whole corpus,0.72,0.72,0.69,0.74
+76,16,K-Nearest Neighbors (K=5),,Frequency of Ans in the whole corpus,0.71,0.71,0.68,0.74
+77,22,Gradient Boosting,,Word2Vec vector of Ans,0.71,0.71,0.68,0.74
+78,21,Random Forest,,BERT vector of [MASK] token in place of the error span,0.71,0.71,0.68,0.73
+79,20,Histogram Gradient Boosting,,Frequency of Ans in corpus corrections,0.71,0.7,0.66,0.75
+80,19,Histogram Gradient Boosting,,Word2Vec vector of d,0.71,0.7,0.66,0.76
+81,18,CatBoost,,Word2Vec vector of d,0.71,0.71,0.67,0.75
+82,17,Random Forest,,Word2Vec vector of d,0.71,0.69,0.64,0.8
+83,14,LightGBM,,Frequency of d misuses instead of Ans in corpus,0.71,0.71,0.68,0.75
+84,15,Gradient Boosting,,Averaged BERT vector of S with gap replaced by Ans,0.71,0.71,0.69,0.73
+85,13,CatBoost,,Frequency of d in the whole corpus,0.71,0.71,0.68,0.75
+86,12,CatBoost,,Frequency of Ans in the whole corpus,0.71,0.71,0.68,0.76
+87,11,Random Forest,,Frequency of d in the whole corpus,0.71,0.71,0.68,0.75
+88,10,CatBoost,,Frequency of Ans in corpus corrections,0.71,0.71,0.68,0.75
+89,9,Histogram Gradient Boosting,,Word2Vec vector of Ans,0.71,0.72,0.7,0.73
+90,8,LightGBM,,Averaged BERT vector of S with gap replaced by Ans,0.71,0.71,0.67,0.76
+91,31,Gradient Boosting,,BERT vector of [MASK] token in place of the error span,0.7,0.71,0.69,0.7
+92,36,Histogram Gradient Boosting,,Frequency of d misuses instead of Ans in corpus,0.7,0.7,0.67,0.72
+93,35,Histogram Gradient Boosting,,Frequency of Ans in the whole corpus,0.7,0.7,0.66,0.73
+94,34,CatBoost,,BERT vector of [MASK] token in place of the error span,0.7,0.7,0.68,0.72
+95,33,XGBoost,,Word2Vec vector of Ans,0.7,0.7,0.68,0.71
+96,32,Decision Tree,,Frequency of Ans in corpus corrections,0.7,0.71,0.68,0.71
+97,30,Histogram Gradient Boosting,,BERT vector of [MASK] token in place of the error span,0.7,0.7,0.68,0.72
+98,29,Histogram Gradient Boosting,,Frequency of d in the whole corpus,0.7,0.7,0.66,0.74
+99,28,CatBoost,,Averaged BERT vector of S with gap replaced by Ans,0.7,0.7,0.67,0.74
+100,27,LightGBM,,Frequency of Ans in the whole corpus,0.7,0.7,0.66,0.75
+101,26,CatBoost,,Frequency of d misuses instead of Ans in corpus,0.7,0.71,0.67,0.73
+102,25,Gradient Boosting,,Frequency of Ans in corpus corrections,0.7,0.71,0.68,0.73
+103,24,LightGBM,,Word2Vec vector of d,0.7,0.7,0.67,0.74
+104,23,LightGBM,,Frequency of d in the whole corpus,0.7,0.7,0.67,0.74
+105,45,K-Nearest Neighbors (K=3),,Frequency of d in the whole corpus,0.69,0.71,0.69,0.69
+106,51,K-Nearest Neighbors (K=3),,Frequency of Ans in the whole corpus,0.69,0.69,0.66,0.71
+107,50,XGBoost,,BERT vector of [MASK] token in place of the error span,0.69,0.69,0.66,0.71
+108,49,AdaBoost,,Frequency of d in the whole corpus,0.69,0.71,0.7,0.67
+109,48,XGBoost,,Word2Vec vector of d,0.69,0.69,0.67,0.71
+110,47,XGBoost,,Frequency of d in the whole corpus,0.69,0.69,0.67,0.71
+111,46,XGBoost,,Frequency of Ans in the whole corpus,0.69,0.69,0.66,0.72
+112,42,K-Nearest Neighbors (K=1),,Frequency of Ans in the whole corpus,0.69,0.7,0.69,0.7
+113,44,K-Nearest Neighbors (K=1),,Averaged BERT vector of S with gap replaced by Ans,0.69,0.7,0.68,0.7
+114,43,Histogram Gradient Boosting,,Averaged BERT vector of S with gap replaced by Ans,0.69,0.69,0.66,0.73
+115,41,K-Nearest Neighbors (K=5),,Frequency of d in the whole corpus,0.69,0.7,0.68,0.71
+116,40,LightGBM,,Frequency of Ans in corpus corrections,0.69,0.69,0.66,0.72
+117,39,XGBoost,,Averaged BERT vector of S with gap replaced by Ans,0.69,0.7,0.68,0.71
+118,38,Gradient Boosting,,Frequency of d misuses instead of Ans in corpus,0.69,0.7,0.68,0.71
+119,37,LightGBM,,BERT vector of [MASK] token in place of the error span,0.69,0.7,0.66,0.73
+120,64,K-Nearest Neighbors (K=3),,Word2Vec vector of Ans,0.68,0.69,0.67,0.69
+121,62,AdaBoost,,Frequency of d misuses instead of Ans in corpus,0.68,0.69,0.67,0.69
+122,63,K-Nearest Neighbors (K=3),,Word2Vec vector of d,0.68,0.69,0.67,0.69
+123,60,K-Nearest Neighbors (K=5),,Frequency of d misuses instead of Ans in corpus,0.68,0.68,0.65,0.71
+124,65,K-Nearest Neighbors (K=5),,BERT vector of [MASK] token in place of the error span,0.68,0.68,0.65,0.7
+125,66,Logistic Regression,,Frequency of Ans in the whole corpus,0.68,0.67,0.64,0.72
+126,67,K-Nearest Neighbors (K=3),,Frequency of d misuses instead of Ans in corpus,0.68,0.69,0.67,0.69
+127,61,Logistic Regression,,Averaged BERT vector of S with gap replaced by Ans,0.68,0.68,0.65,0.71
+128,68,Gradient Boosting,,Word2Vec vector of d,0.68,0.68,0.66,0.69
+129,59,K-Nearest Neighbors (K=5),,Word2Vec vector of d,0.68,0.68,0.65,0.71
+130,57,K-Nearest Neighbors (K=5),,Frequency of Ans in corpus corrections,0.68,0.7,0.68,0.68
+131,56,K-Nearest Neighbors (K=3),,Averaged BERT vector of S with gap replaced by Ans,0.68,0.69,0.67,0.7
+132,55,Gradient Boosting,,Frequency of Ans in the whole corpus,0.68,0.7,0.68,0.7
+133,54,K-Nearest Neighbors (K=1),,Word2Vec vector of Ans,0.68,0.7,0.68,0.7
+134,53,K-Nearest Neighbors (K=1),,Word2Vec vector of d,0.68,0.7,0.68,0.7
+135,52,K-Nearest Neighbors (K=1),,Frequency of d misuses instead of Ans in corpus,0.68,0.7,0.68,0.7
+136,58,K-Nearest Neighbors (K=5),,Word2Vec vector of Ans,0.68,0.68,0.65,0.71
+137,74,K-Nearest Neighbors (K=5),,Averaged BERT vector of S with gap replaced by Ans,0.67,0.68,0.65,0.7
+138,77,AdaBoost,,Averaged BERT vector of S with gap replaced by Ans,0.67,0.69,0.68,0.66
+139,76,Logistic Regression,,Frequency of d in the whole corpus,0.67,0.67,0.64,0.69
+140,75,K-Nearest Neighbors (K=3),,BERT vector of [MASK] token in place of the error span,0.67,0.68,0.66,0.69
+141,71,K-Nearest Neighbors (K=1),,Frequency of d in the whole corpus,0.67,0.69,0.68,0.66
+142,73,AdaBoost,,Frequency of Ans in the whole corpus,0.67,0.69,0.67,0.67
+143,72,K-Nearest Neighbors (K=1),,Frequency of Ans in corpus corrections,0.67,0.69,0.68,0.67
+144,70,XGBoost,,Frequency of Ans in corpus corrections,0.67,0.67,0.64,0.71
+145,69,XGBoost,,Frequency of d misuses instead of Ans in corpus,0.67,0.68,0.65,0.7
+146,81,Logistic Regression,,Frequency of Ans in corpus corrections,0.66,0.66,0.63,0.7
+147,83,Logistic Regression,,Word2Vec vector of Ans,0.66,0.66,0.64,0.69
+148,82,Decision Tree,,Word2Vec vector of Ans,0.66,0.68,0.66,0.66
+149,80,Logistic Regression,,Frequency of d misuses instead of Ans in corpus,0.66,0.68,0.66,0.67
+150,79,AdaBoost,,Word2Vec vector of Ans,0.66,0.68,0.65,0.68
+151,78,K-Nearest Neighbors (K=1),,BERT vector of [MASK] token in place of the error span,0.66,0.67,0.65,0.68
+152,84,K-Nearest Neighbors (K=3),,Frequency of Ans in corpus corrections,0.65,0.67,0.66,0.65
+153,85,Logistic Regression,,BERT vector of [MASK] token in place of the error span,0.65,0.66,0.63,0.68
+154,86,Decision Tree,,Averaged BERT vector of S with gap replaced by Ans,0.65,0.65,0.62,0.68
+155,87,SVM,,Frequency of Ans in corpus corrections,0.65,0.56,0.52,0.86
+156,88,AdaBoost,,BERT vector of [MASK] token in place of the error span,0.65,0.68,0.67,0.62
+157,91,AdaBoost,,Frequency of Ans in corpus corrections,0.64,0.67,0.66,0.62
+158,89,Ridge Regression,,BERT vector of [MASK] token in place of the error span,0.64,0.64,0.6,0.69
+159,90,Ridge Regression,,Frequency of d misuses instead of Ans in corpus,0.64,0.64,0.61,0.68
+160,92,Decision Tree,,Frequency of d in the whole corpus,0.64,0.66,0.64,0.63
+161,93,K-Nearest Neighbors (K=4),,Frequency of d in the whole corpus,0.64,0.7,0.74,0.56
+162,103,K-Nearest Neighbors (K=4),,Word2Vec vector of d,0.63,0.67,0.69,0.57
+163,102,K-Nearest Neighbors (K=4),,Word2Vec vector of Ans,0.63,0.67,0.69,0.57
+164,100,K-Nearest Neighbors (K=4),,Frequency of Ans in corpus corrections,0.63,0.7,0.75,0.54
+165,104,K-Nearest Neighbors (K=4),,Averaged BERT vector of S with gap replaced by Ans,0.63,0.68,0.69,0.57
+166,105,Decision Tree,,Word2Vec vector of d,0.63,0.63,0.6,0.65
+167,101,K-Nearest Neighbors (K=4),,Frequency of d misuses instead of Ans in corpus,0.63,0.68,0.69,0.58
+168,98,Ridge Regression,,Word2Vec vector of Ans,0.63,0.63,0.6,0.66
+169,99,Ridge Regression,,Averaged BERT vector of S with gap replaced by Ans,0.63,0.64,0.62,0.63
+170,95,Ridge Regression,,Frequency of Ans in corpus corrections,0.63,0.63,0.6,0.67
+171,94,Ridge Regression,,Frequency of d in the whole corpus,0.63,0.63,0.61,0.66
+172,97,Ridge Regression,,Frequency of Ans in the whole corpus,0.63,0.63,0.6,0.67
+173,96,Decision Tree,,Frequency of Ans in the whole corpus,0.63,0.63,0.61,0.65
+174,106,AdaBoost,,Word2Vec vector of d,0.62,0.65,0.64,0.61
+175,107,K-Nearest Neighbors (K=4),,Frequency of Ans in the whole corpus,0.62,0.68,0.72,0.55
+176,108,Decision Tree,,BERT vector of [MASK] token in place of the error span,0.61,0.64,0.63,0.59
+177,109,Logistic Regression,,Word2Vec vector of d,0.61,0.61,0.59,0.62
+178,111,Naive Bayesian Classifier,,BERT vector of [MASK] token in place of the error span,0.6,0.61,0.59,0.62
+179,112,K-Nearest Neighbors (K=2),,Frequency of Ans in corpus corrections,0.6,0.68,0.75,0.5
+180,110,K-Nearest Neighbors (K=4),,BERT vector of [MASK] token in place of the error span,0.6,0.66,0.68,0.54
+181,113,K-Nearest Neighbors (K=2),,Frequency of d in the whole corpus,0.59,0.68,0.77,0.48
+182,114,Decision Tree,,Frequency of d misuses instead of Ans in corpus,0.59,0.61,0.6,0.58
+183,119,K-Nearest Neighbors (K=2),,Word2Vec vector of d,0.58,0.67,0.73,0.49
+184,122,Naive Bayesian Classifier,,Averaged BERT vector of S with gap replaced by Ans,0.58,0.58,0.55,0.61
+185,121,K-Nearest Neighbors (K=2),,Word2Vec vector of Ans,0.58,0.67,0.73,0.48
+186,120,K-Nearest Neighbors (K=2),,Frequency of Ans in the whole corpus,0.58,0.67,0.73,0.48
+187,118,K-Nearest Neighbors (K=2),,Frequency of d misuses instead of Ans in corpus,0.58,0.67,0.73,0.49
+188,117,SVM,,BERT vector of [MASK] token in place of the error span,0.58,0.59,0.57,0.6
+189,116,Naive Bayesian Classifier,,Frequency of Ans in the whole corpus,0.58,0.57,0.54,0.64
+190,115,Naive Bayesian Classifier,,Frequency of Ans in corpus corrections,0.58,0.57,0.54,0.64
+191,123,K-Nearest Neighbors (K=2),,Averaged BERT vector of S with gap replaced by Ans,0.57,0.66,0.72,0.48
+192,124,SVM,,Word2Vec vector of Ans,0.57,0.55,0.52,0.62
+193,125,Naive Bayesian Classifier,,Frequency of d in the whole corpus,0.56,0.57,0.55,0.57
+194,126,Naive Bayesian Classifier,,Frequency of d misuses instead of Ans in corpus,0.56,0.56,0.54,0.57
+195,127,K-Nearest Neighbors (K=2),,BERT vector of [MASK] token in place of the error span,0.55,0.65,0.7,0.46
+196,128,Naive Bayesian Classifier,,Word2Vec vector of Ans,0.55,0.58,0.56,0.54
+197,129,Naive Bayesian Classifier,,Word2Vec vector of d,0.55,0.58,0.56,0.54
+198,130,Ridge Regression,,Word2Vec vector of d,0.55,0.56,0.54,0.55
+199,131,SVM,,Frequency of Ans in the whole corpus,0.35,0.58,0.67,0.24
+200,132,SVM,,Word2Vec vector of d,0.33,0.57,0.64,0.22
+201,133,SVM,,Frequency of d in the whole corpus,0.31,0.56,0.63,0.21
+202,134,SVM,,Frequency of d misuses instead of Ans in corpus,0.16,0.55,0.7,0.09
+203,135,SVM,,Averaged BERT vector of S with gap replaced by Ans,0.09,0.53,0.56,0.05
