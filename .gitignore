@@ -9,3 +9,4 @@ env
 bert-base-cased
 __pycache__
 processed_dataset*
+catboost_info
